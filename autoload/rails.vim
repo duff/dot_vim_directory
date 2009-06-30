@@ -2940,7 +2940,7 @@ function! s:Extract(bang,...) range abort
   else
     let fspaces = spaces
   endif
-  let renderstr = "render :partial => '".fnamemodify(file,":r:r")."'"
+  let renderstr = "render '".fnamemodify(file,":r:r")."'"
   if collection != ""
     let renderstr .= ", :collection => ".collection
   elseif "@".name != var
