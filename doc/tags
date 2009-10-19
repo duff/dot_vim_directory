@@ -106,6 +106,12 @@ NS_camelcase()	NERD_snippets.txt	/*NS_camelcase()*
 NS_prompt()	NERD_snippets.txt	/*NS_prompt()*
 NS_underscore()	NERD_snippets.txt	/*NS_underscore()*
 TCommentDefineType()	tComment.txt	/*TCommentDefineType()*
+allml	allml.txt	/*allml*
+allml-author	allml.txt	/*allml-author*
+allml-customizing	allml.txt	/*allml-customizing*
+allml-encoding	allml.txt	/*allml-encoding*
+allml-mappings	allml.txt	/*allml-mappings*
+allml.txt	allml.txt	/*allml.txt*
 config/rails.vim	rails.txt	/*config\/rails.vim*
 cs	surround.txt	/*cs*
 ds	surround.txt	/*ds*
