@@ -2,6 +2,7 @@ def update
   @\<c-r>=NS_underscore(NS_prompt("snippet_classname", "Model ClassName", ""))\<cr> = \<c-r>=snippet_classname\<cr>.find(params[:id])
 
   return render(:action => :edit) unless @\<c-r>=NS_underscore(snippet_classname)\<cr>.update_attributes(params[:\<c-r>=NS_underscore(snippet_classname)\<cr>])
+  
   flash[:notice] = '\<c-r>=snippet_classname\<cr> was successfully updated.'
   redirect_to(@\<c-r>=NS_underscore(snippet_classname)\<cr>) 
 end

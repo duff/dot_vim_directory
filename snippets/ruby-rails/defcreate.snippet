@@ -4,5 +4,5 @@ def create
   return render(:action => :new) unless @\<c-r>=NS_underscore(snippet_classname)\<cr>.save
 
   flash[:notice] = '\<c-r>=snippet_classname\<cr> was successfully created.'
-  redirect_to(@\<c-r>=NS_underscore(snippet_classname)\<cr>)
+  redirect_to(\<c-r>=NS_underscore(snippet_classname)\<cr>s_url)
 end
