@@ -11,9 +11,15 @@ map <leader>2 :cnext <CR>
 map <leader>: ds"i:<Esc>
 map <C-n> :bn<CR>
 map <C-p> :bp<CR>
+map <leader>f :FuzzyFinderTextMate<CR>
+
+
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
-nmap <leader>f :Rfind<Space>
+nmap <leader>= :ruby finder.rescan!<CR>
+
+
+" nmap <leader>f :Rfind<Space>
 nmap <leader>r :Rake<CR>
 imap ;; <Esc>
 imap <S-Space> <C-n>
@@ -22,6 +28,8 @@ map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+
+nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 set clipboard+=unnamed
 set nowrap 
@@ -37,6 +45,8 @@ set ruler
 set grepprg=ack
 set grepformat=%f:%l:%m
 set autowrite
+  
+let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
 " set completeopt=preview
 
@@ -134,7 +144,7 @@ nmap <Leader>b :call HandleURI()<CR>
 
 
 " Allow toggling of the quickfix window
-command -bang -nargs=? QFix call QFixToggle(<bang>0)
+command! -bang -nargs=? QFix call QFixToggle(<bang>0)
 function! QFixToggle(forced)
   if exists("g:qfix_win") && a:forced == 0
     cclose
