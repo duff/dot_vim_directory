@@ -13,6 +13,7 @@ map <C-n> :bn<CR>
 map <C-p> :bp<CR>
 map <leader>f :FuzzyFinderTextMate<CR>
 nmap <leader>F :ruby finder.rescan!<CR>
+nmap <leader>g :gr <C-R><C-W><CR>
 vmap <leader>= :Tabularize /\|<CR>
 
 nmap <leader><Enter> _i<Enter><Esc>
