@@ -12,14 +12,13 @@ map <leader>: ds"i:<Esc>
 map <C-n> :bn<CR>
 map <C-p> :bp<CR>
 map <leader>f :FuzzyFinderTextMate<CR>
-
+nmap <leader>F :ruby finder.rescan!<CR>
+vmap <leader>= :Tabularize /\|<CR>
 
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
-nmap <leader>= :ruby finder.rescan!<CR>
 
 
-" nmap <leader>f :Rfind<Space>
 nmap <leader>r :Rake<CR>
 imap ;; <Esc>
 imap <S-Space> <C-n>
