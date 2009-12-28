@@ -45,6 +45,8 @@ set ruler
 set grepprg=ack
 set grepformat=%f:%l:%m
 set autowrite
+set noerrorbells
+set visualbell
   
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
