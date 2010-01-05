@@ -19,6 +19,8 @@ vmap <leader>= :Tabularize /\|<CR>
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
 
+nmap <leader>L `L<leader>t
+nmap <leader>l `L
 
 nmap <leader>r :Rake<CR>
 imap ;; <Esc>
