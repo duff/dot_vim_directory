@@ -25,7 +25,7 @@ nmap <leader>l `L
 nmap <leader>r :Rake<CR>
 imap ;; <Esc>
 imap <S-Space> <C-n>
-imap <C-l> <Space>=> 
+imap <C-l> <Space>=>
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
@@ -34,7 +34,7 @@ map <C-L> <C-W>l
 nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 set clipboard+=unnamed
-set nowrap 
+set nowrap
 set tabstop=2
 set smarttab
 set shiftwidth=2
@@ -42,7 +42,7 @@ set autoindent
 set expandtab
 set backspace=start,indent,eol
 set number
-set incsearch 
+set incsearch
 set ruler
 set grepprg=ack
 set grepformat=%f:%l:%m
@@ -66,13 +66,13 @@ set complete=.
 set lines=79 columns=272
 set laststatus=2
 
-set backup                     
-set backupdir=~/.vim/backups 
-set directory=~/.vim/tmp     
+set backup
+set backupdir=~/.vim/backups
+set directory=~/.vim/tmp
 set history=256
 
 let NERDTreeWinSize=41
-:colorscheme vividchalk 
+:colorscheme vividchalk
 
 syntax on
 
@@ -80,12 +80,15 @@ filetype plugin indent on
 
 au FocusLost * :wall
 
+" strip trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
 augroup myfiletypes
   "clear old autocmds in group
-  autocmd!        
+  autocmd!
 
   "for ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et      
+  autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et
 augroup END
 
 augroup markdown
