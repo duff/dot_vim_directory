@@ -8,7 +8,6 @@ map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloade
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 map <leader>1 :cprevious <CR>
 map <leader>2 :cnext <CR>
-map <leader>: ds"i:<Esc>
 map <C-n> :bn<CR>
 map <C-p> :bp<CR>
 map <leader>f :FuzzyFinderTextMate<CR>
@@ -19,10 +18,14 @@ vmap <leader>= :Tabularize /\|<CR>
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
 
+nmap <leader>: ds"i:<Esc>e
+nmap <leader>" bhxcsw"
+
 nmap <leader>L `L<leader>t
 nmap <leader>l `L
 
 nmap <leader>r :Rake<CR>
+nmap <leader>R :.Rake<CR>
 imap ;; <Esc>
 imap <S-Space> <C-n>
 imap <C-l> <Space>=>
