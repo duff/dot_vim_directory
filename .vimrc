@@ -24,15 +24,20 @@ nmap <leader>" bhxcsw"
 nmap <leader>L `L<leader>t
 nmap <leader>l `L
 
+nmap <C-\> <C-]>
+
 nmap <leader>r :Rake<CR>
 nmap <leader>R :.Rake<CR>
+
 imap ;; <Esc>
 imap <S-Space> <C-n>
-imap <C-l> <Space>=>
+imap <C-l> <Space>=><Space>
+
 map <C-J> <C-W>j
 map <C-K> <C-W>k
 map <C-H> <C-W>h
 map <C-L> <C-W>l
+
 
 nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
 
