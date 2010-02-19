@@ -12,7 +12,8 @@ map <C-n> :bn<CR>
 map <C-p> :bp<CR>
 map <leader>f :FuzzyFinderTextMate<CR>
 nmap <leader>F :ruby finder.rescan!<CR>
-nmap <leader>g :gr <C-R><C-W><CR>
+nmap <leader>A :Ack<cword><CR>
+nmap <leader>a :Ack<Space>
 vmap <leader>= :Tabularize /\|<CR>
 
 nmap <leader><Enter> _i<Enter><Esc>
@@ -89,7 +90,7 @@ filetype plugin indent on
 au FocusLost * :wall
 
 " strip trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 augroup myfiletypes
   "clear old autocmds in group
