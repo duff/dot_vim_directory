@@ -67,6 +67,9 @@ let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 " inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
+" Surround plugin - allow # to be used for string interpolation.
+autocmd FileType ruby let g:surround_113 = "#{\r}"   " v
+autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
 
 set completeopt=longest,menu,preview
 " set completeopt=menuone,preview
