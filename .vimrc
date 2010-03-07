@@ -26,6 +26,7 @@ nmap <leader>L `L<leader>t
 nmap <leader>l `L
 
 nmap <C-\> <C-]>
+nmap g<C-\> g<C-]>
 
 nmap <leader>r :Rake<CR>
 nmap <leader>R :.Rake<CR>
@@ -109,7 +110,7 @@ augroup END
 
 set wm=2
 
-"set hlsearch
+" set hlsearch
 
 
 
