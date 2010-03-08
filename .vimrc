@@ -11,10 +11,16 @@ map <leader>2 :cnext <CR>
 map <C-n> :bn<CR>
 map <C-p> :bp<CR>
 map <leader>f :FuzzyFinderTextMate<CR>
+map <leader>= :Tabularize /\|<CR>
+
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
 nmap <leader>F :ruby finder.rescan!<CR>
 nmap <leader>A :Ack<cword><CR>
 nmap <leader>a :Ack<Space>
-vmap <leader>= :Tabularize /\|<CR>
 
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
@@ -35,10 +41,6 @@ imap ;; <Esc>
 imap <S-Space> <C-n>
 imap <C-l> <Space>=><Space>
 
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
 
 
 nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
