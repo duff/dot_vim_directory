@@ -37,6 +37,8 @@ nmap g<C-\> g<C-]>
 nmap <leader>r :Rake<CR>
 nmap <leader>R :.Rake<CR>
 
+nmap <Leader>q :QFix<CR>
+
 imap ;; <Esc>
 imap <S-Space> <C-n>
 imap <C-l> <Space>=><Space>
@@ -114,7 +116,7 @@ set wm=2
 
 " set hlsearch
 
-
+let g:liquid_highlight_types=["html","erb=eruby","html+erb=eruby.html"]
 
 
 
@@ -183,4 +185,3 @@ augroup QFixToggle
  autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
 
-nmap <Leader>q :QFix<CR>
