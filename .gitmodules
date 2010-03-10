@@ -25,3 +25,9 @@
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git@github.com:duff/vim-rails.git
+[submodule "bundle/vim-rubytest"]
+	path = bundle/vim-rubytest
+	url = git://github.com/janx/vim-rubytest.git
+[submodule "bundle/vim_nerd_snippets"]
+	path = bundle/vim_nerd_snippets
+	url = git@github.com:duff/vim_nerd_snippets.git
