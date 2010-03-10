@@ -1,0 +1,3 @@
+[submodule "bundle/nerdsnippets"]
+	path = bundle/nerdsnippets
+	url = git://github.com/scrooloose/nerdsnippets.git
