@@ -117,11 +117,8 @@ augroup END
 
 set wm=2
 
-" set hlsearch
 
 let g:liquid_highlight_types=["html","erb=eruby","html+erb=eruby.html"]
-
-
 
 " Tell vim to remember certain things when we exit
 "  '10 : marks will be remembered for up to 10 previously edited files
@@ -188,6 +185,5 @@ augroup QFixToggle
  autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
 
-
-autocmd GuiEnter * NERDTree
+autocmd GuiEnter * NERDTree   " Show NERDTREE after the GUI starts up.
 
