@@ -66,6 +66,7 @@ set autowrite
 set noerrorbells
 set visualbell
 set guioptions-=T
+set guioptions=egmt   " disable scrollbars
 
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
@@ -186,4 +187,7 @@ augroup QFixToggle
  autocmd BufWinEnter quickfix let g:qfix_win = bufnr("$")
  autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
+
+
+autocmd GuiEnter * NERDTree
 
