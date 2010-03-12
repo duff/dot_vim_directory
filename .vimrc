@@ -46,7 +46,6 @@ imap <S-Space> <C-n>
 imap <C-l> <Space>=><Space>
 
 
-
 nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
 
 set clipboard+=unnamed
@@ -185,5 +184,5 @@ augroup QFixToggle
  autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
 
-autocmd GuiEnter * NERDTree   " Show NERDTREE after the GUI starts up.
+" autocmd GuiEnter * NERDTree   " Show NERDTREE after the GUI starts up.
 
