@@ -8,6 +8,7 @@ let mapleader = ","
 map <leader>v :sp ~/.vimrc<CR><C-W>_
 map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>N :NERDTreeFind<CR>
 map <leader>1 :cprevious <CR>
 map <leader>2 :cnext <CR>
 map <C-n> :bn<CR>
