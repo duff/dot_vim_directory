@@ -65,8 +65,7 @@ set grepformat=%f:%l:%m
 set autowrite
 set noerrorbells
 set visualbell
-set guioptions-=T
-set guioptions=egmt   " disable scrollbars
+set guioptions=eg   " disable scrollbars, etc
 
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
