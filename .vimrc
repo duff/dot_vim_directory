@@ -4,27 +4,35 @@ set nocompatible
 
 let mapleader = ","
 
-nmap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-nmap <leader>N :NERDTreeFind<CR>
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>n :NERDTreeFind<CR>
 
-nmap <leader>1 :cprevious <CR>
-nmap <leader>2 :cnext <CR>
+map <leader>1 :cprevious <CR>
+map <leader>2 :cnext <CR>
 
-nmap <leader>= :Tabularize /\|<CR>
+map <leader>= :Tabularize /\|<CR>
 
-nmap <C-J> <C-W>j
-nmap <C-K> <C-W>k
-nmap <C-H> <C-W>h
-nmap <C-L> <C-W>l
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
 
-nmap <leader>v :sp ~/.vimrc<CR><C-W>_
-nmap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <leader>j ]m
+map <leader>J ]M
+map <leader>k [m
+map <leader>K [M
 
-nmap <leader>f :FuzzyFinderTextMate<CR>
-nmap <leader>F :ruby finder.rescan!<CR>
+map <leader>v :sp ~/.vimrc<CR><C-W>_
+map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-nmap <leader>A :Ack<cword><CR>
-nmap <leader>a :Ack<Space>
+map <leader>f :FuzzyFinderTextMate<CR>
+map <leader>F :ruby finder.rescan!<CR>
+
+map <leader>A :Ack<cword><CR>
+map <leader>a :Ack<Space>
+
+map <leader>r :Rake<CR>
+map <leader>R :.Rake<CR>
 
 nmap <leader><Enter> _i<Enter><Esc>
 nmap <leader><Space> i<Space><Esc>
@@ -38,17 +46,14 @@ nmap <leader>l `L
 nmap <C-\> <C-]>
 nmap g<C-\> g<C-]>
 
-nmap <leader>r :Rake<CR>
-nmap <leader>R :.Rake<CR>
-
 nmap <Leader>q :QFix<CR>
 
 imap ;; <Esc>
 imap <S-Space> <C-n>
 imap <C-l> <Space>=><Space>
 
-
-nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>
+"allow insertion of single char from normal model
+nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>   
 
 set clipboard+=unnamed
 set nowrap
