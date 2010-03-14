@@ -4,24 +4,25 @@ set nocompatible
 
 let mapleader = ","
 
+nmap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+nmap <leader>N :NERDTreeFind<CR>
 
-map <leader>v :sp ~/.vimrc<CR><C-W>_
-map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>N :NERDTreeFind<CR>
-map <leader>1 :cprevious <CR>
-map <leader>2 :cnext <CR>
-map <C-n> :bn<CR>
-map <C-p> :bp<CR>
-map <leader>f :FuzzyFinderTextMate<CR>
-map <leader>= :Tabularize /\|<CR>
+nmap <leader>1 :cprevious <CR>
+nmap <leader>2 :cnext <CR>
 
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
+nmap <leader>= :Tabularize /\|<CR>
 
+nmap <C-J> <C-W>j
+nmap <C-K> <C-W>k
+nmap <C-H> <C-W>h
+nmap <C-L> <C-W>l
+
+nmap <leader>v :sp ~/.vimrc<CR><C-W>_
+nmap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+nmap <leader>f :FuzzyFinderTextMate<CR>
 nmap <leader>F :ruby finder.rescan!<CR>
+
 nmap <leader>A :Ack<cword><CR>
 nmap <leader>a :Ack<Space>
 
