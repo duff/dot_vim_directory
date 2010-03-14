@@ -52,8 +52,6 @@ imap ;; <Esc>
 imap <S-Space> <C-n>
 imap <C-l> <Space>=><Space>
 
-"allow insertion of single char from normal model
-nnoremap <C-i> :exec "normal i".nr2char(getchar())."\e"<CR>   
 
 set clipboard+=unnamed
 set nowrap
@@ -75,38 +73,28 @@ set guioptions=eg   " disable scrollbars, etc
 
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
-" set completeopt=preview
-
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-" inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " Surround plugin - allow # to be used for string interpolation.
 autocmd FileType ruby let g:surround_113 = "#{\r}"   " v
 autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
 
 set completeopt=longest,menu,preview
-" set completeopt=menuone,preview
-
 set complete=.
 set lines=79 columns=272
 set laststatus=2
-
 set backup
 set backupdir=~/.vim/backups
 set directory=~/.vim/tmp
 set history=256
 
 let NERDTreeWinSize=41
-:colorscheme vividchalk
-
+colorscheme vividchalk
 syntax on
 
 filetype plugin indent on
 
 au FocusLost * :wall
-
-" strip trailing whitespace
-" autocmd BufWritePre * :%s/\s\+$//e
 
 augroup myfiletypes
   "clear old autocmds in group
@@ -121,7 +109,6 @@ augroup markdown
 augroup END
 
 set wm=2
-
 
 let g:liquid_highlight_types=["html","erb=eruby","html+erb=eruby.html"]
 
@@ -190,5 +177,4 @@ augroup QFixToggle
  autocmd BufWinLeave * if exists("g:qfix_win") && expand("<abuf>") == g:qfix_win | unlet! g:qfix_win | endif
 augroup END
 
-" autocmd GuiEnter * NERDTree   " Show NERDTREE after the GUI starts up.
 
