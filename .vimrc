@@ -40,9 +40,6 @@ nmap <leader><Space> i<Space><Esc>
 nmap <leader>: ds"i:<Esc>e
 nmap <leader>" bhxcsw"
 
-nmap <leader>L `L<leader>t
-nmap <leader>l `L
-
 nmap <C-\> <C-]>
 nmap g<C-\> g<C-]>
 
