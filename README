@@ -1,0 +1,5 @@
+
+This is my .vim directory.  I'm using Tim Pope's vim-pathogen plugin (http://github.com/tpope/vim-pathogen) which allows me bundle plugins in an organized way under the /bundle directory.  Git submodules allow me to easily update to the latest plugins.
+
+
+
