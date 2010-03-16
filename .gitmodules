@@ -58,3 +58,6 @@
 [submodule "bundle/vim-ddldbl"]
 	path = bundle/vim-ddldbl
 	url = git://github.com/duff/vim-ddldbl.git
+[submodule "bundle/vim-ruby"]
+	path = bundle/vim-ruby
+	url = git://github.com/vim-ruby/vim-ruby.git
