@@ -52,3 +52,6 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-bufonly"]
+	path = bundle/vim-bufonly
+	url = git://github.com/duff/vim-bufonly.git
