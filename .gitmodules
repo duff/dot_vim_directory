@@ -55,3 +55,6 @@
 [submodule "bundle/vim-bufonly"]
 	path = bundle/vim-bufonly
 	url = git://github.com/duff/vim-bufonly.git
+[submodule "bundle/vim-ddldbl"]
+	path = bundle/vim-ddldbl
+	url = git://github.com/duff/vim-ddldbl.git
