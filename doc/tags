@@ -1,6 +1,3 @@
-:Ack	ack.txt	/*:Ack*
-:AckAdd	ack.txt	/*:AckAdd*
-:AckFromSearch	ack.txt	/*:AckFromSearch*
 :FuzzyFinderAddBookmark	fuzzyfinder.txt	/*:FuzzyFinderAddBookmark*
 :FuzzyFinderAddBookmarkAsSelectedText	fuzzyfinder.txt	/*:FuzzyFinderAddBookmarkAsSelectedText*
 :FuzzyFinderBookmark	fuzzyfinder.txt	/*:FuzzyFinderBookmark*
@@ -18,18 +15,12 @@
 :FuzzyFinderTag	fuzzyfinder.txt	/*:FuzzyFinderTag*
 :FuzzyFinderTagWithCursorWord	fuzzyfinder.txt	/*:FuzzyFinderTagWithCursorWord*
 :FuzzyFinderTaggedFile	fuzzyfinder.txt	/*:FuzzyFinderTaggedFile*
-:LAck	ack.txt	/*:LAck*
-:LAckAdd	ack.txt	/*:LAckAdd*
 :TComment	tComment.txt	/*:TComment*
 :TCommentAs	tComment.txt	/*:TCommentAs*
 :TCommentBlock	tComment.txt	/*:TCommentBlock*
 :TCommentInline	tComment.txt	/*:TCommentInline*
 :TCommentRight	tComment.txt	/*:TCommentRight*
 TCommentDefineType()	tComment.txt	/*TCommentDefineType()*
-Tabular.txt	Tabular.txt	/*Tabular.txt*
-ack	ack.txt	/*ack*
-ack-author	ack.txt	/*ack-author*
-ack.txt	ack.txt	/*ack.txt*
 fuzzyfinder	fuzzyfinder.txt	/*fuzzyfinder*
 fuzzyfinder-abbreviation	fuzzyfinder.txt	/*fuzzyfinder-abbreviation*
 fuzzyfinder-about	fuzzyfinder.txt	/*fuzzyfinder-about*
@@ -195,9 +186,3 @@ tComment-Key-Bindings	tComment.txt	/*tComment-Key-Bindings*
 tComment-Usage	tComment.txt	/*tComment-Usage*
 tComment-commands	tComment.txt	/*tComment-commands*
 tComment.txt	tComment.txt	/*tComment.txt*
-tabular	Tabular.txt	/*tabular*
-tabular-intro	Tabular.txt	/*tabular-intro*
-tabular-scripting	Tabular.txt	/*tabular-scripting*
-tabular-toc	Tabular.txt	/*tabular-toc*
-tabular-walkthrough	Tabular.txt	/*tabular-walkthrough*
-tabular.vim	Tabular.txt	/*tabular.vim*
