@@ -67,6 +67,7 @@ set autowrite
 set noerrorbells
 set visualbell
 set guioptions=eg   " disable scrollbars, etc
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
