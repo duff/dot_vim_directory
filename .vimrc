@@ -67,7 +67,6 @@ set autowrite
 set noerrorbells
 set visualbell
 set guioptions=eg   " disable scrollbars, etc
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
 
@@ -85,6 +84,18 @@ set backup
 set backupdir=~/.vim/backups
 set directory=~/.vim/tmp
 set history=256
+
+set statusline=
+set statusline+=%-3.3n\                      " buffer number
+set statusline+=%f\                          " filename
+set statusline+=%h%m%r%w                     " status flags
+set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type
+set statusline+=\ %{fugitive#statusline()}   " fugitive
+set statusline+=%=                           " right align remainder
+set statusline+=0x%-8B                       " character value
+set statusline+=%-14(%l,%c%V%)               " line, character
+set statusline+=%<%P                         " file position
+
 
 let NERDTreeWinSize=41
 colorscheme vividchalk
