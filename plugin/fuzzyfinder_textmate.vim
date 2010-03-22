@@ -138,9 +138,7 @@ RUBY
       matches = finder.find(text, limit)
       matches.sort_by { |a| [-a[:score], a[:path]] }.each_with_index do |match, index|
         word = match[:path]
-        abbr = "%2d: %s" % [index+1, match[:abbr]]
-        menu = "[%5d]" % [match[:score] * 10000]
-        VIM.evaluate("add(result, { 'word' : #{word.inspect}, 'abbr' : #{abbr.inspect}, 'menu' : #{menu.inspect} })")
+        VIM.evaluate("add(result, { 'word' : #{word.inspect}, 'abbr' : #{match[:abbr].inspect} })")
       end
 RUBY
 
