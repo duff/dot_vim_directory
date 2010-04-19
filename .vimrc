@@ -44,8 +44,11 @@ map <leader>v :sp ~/.vimrc<CR><C-W>_
 map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " fuzzyfinder stuff
-map <leader>f :FuzzyFinderTextMate<CR>
-map <leader>F :ruby finder.rescan!<CR>
+" map <leader>f :FuzzyFinderTextMate<CR>
+" map <leader>F :ruby finder.rescan!<CR>
+
+" command-t plugin
+silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 
 " ack shortcuts
 map <leader>A :Ack<cword><CR>
