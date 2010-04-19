@@ -49,6 +49,7 @@ map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloade
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
+map <leader>F :CommandTFlush<CR>
 
 " ack shortcuts
 map <leader>A :Ack<cword><CR>
@@ -148,6 +149,10 @@ set statusline+=%-14(%l,%c%V%)               " line, character
 set statusline+=%<%P                         " file position
 
 
+" ---------------------------------------------------------------------------
+"  Command-t customization
+" ---------------------------------------------------------------------------
+let g:CommandTMaxHeight=20
 
 
 " ---------------------------------------------------------------------------
@@ -155,7 +160,6 @@ set statusline+=%<%P                         " file position
 " ---------------------------------------------------------------------------
 colorscheme vividchalk
 syntax on
-
 
 
 " ---------------------------------------------------------------------------
