@@ -12,81 +12,6 @@ set viminfo='10,\"100,:20,%,n~/.viminfo       " remember certain things when we 
 set autoread                                  " reload files changed outside of Vim
 set autowrite                                 " some commands should cause an automatic write
 
-" ---------------------------------------------------------------------------
-" Mappings
-" ---------------------------------------------------------------------------
-
-" show/hide nerdtree
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>n :NERDTreeFind<CR>
-
-" navigating search results
-map <leader>1 :cprevious <CR>
-map <leader>2 :cnext <CR>
-
-" clean up cucumber tables
-map <leader>= :Tabularize /\|<CR>
-
-" move between windows
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
-
-" method navigation
-map <leader>j ]m
-map <leader>J ]M
-map <leader>k [m
-map <leader>K [M
-
-" edit vimrc
-map <leader>v :sp ~/.vimrc<CR><C-W>_
-map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
-" fuzzyfinder stuff
-" map <leader>f :FuzzyFinderTextMate<CR>
-" map <leader>F :ruby finder.rescan!<CR>
-
-" command-t plugin
-silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
-map <leader>F :CommandTFlush<CR>
-
-" ack shortcuts
-map <leader>A :Ack<cword><CR>
-map <leader>a :Ack<Space>
-
-" normal mode shortcuts
-nmap <leader><Enter> _i<Enter><Esc>
-nmap <leader><Space> i<Space><Esc>
-
-" switch between a symbol and a string
-nmap <leader>: ds"i:<Esc>e
-nmap <leader>" bhxcsw"
-
-" ctags shortcuts
-nmap <C-\> <C-]>
-nmap g<C-\> g<C-]>
-
-" easily back to normal mode
-imap ;; <Esc>
-
-" auto complete shortcut
-imap <S-Space> <C-n>
-
-" hash syntax shortcut
-imap <C-l> <Space>=><Space>
-
-
-" ---------------------------------------------------------------------------
-"  rails.vim plugin mappgins
-" ---------------------------------------------------------------------------
-map <leader>r :Rake<CR>
-map <leader>R :.Rake<CR>
-
-nmap <leader>c :Rcontroller 
-nmap <leader>m :Rmodel 
-
-
 
 " ----------------------------------------------------------------------------
 "  UI
@@ -97,6 +22,7 @@ set backspace=start,indent,eol        " allow backspacing over anything in inser
 set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
 let NERDTreeWinSize=41                " how wide nerdtree ought to be
+
 
 " ----------------------------------------------------------------------------
 "  Visual cues
@@ -136,6 +62,84 @@ set directory=~/.vim/tmp               " where to keep swp files
 
 
 " ---------------------------------------------------------------------------
+" Mappings
+" ---------------------------------------------------------------------------
+
+" show/hide nerdtree
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+map <leader>n :NERDTreeFind<CR>
+
+" navigating search results
+map <leader>1 :cprevious <CR>
+map <leader>2 :cnext <CR>
+
+" clean up cucumber tables
+map <leader>= :Tabularize /\|<CR>
+
+" move between windows
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+
+" method navigation
+map <leader>j ]m
+map <leader>J ]M
+map <leader>k [m
+map <leader>K [M
+
+" edit vimrc
+map <leader>v :sp ~/.vimrc<CR><C-W>_
+map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" fuzzyfinder stuff
+" map <leader>f :FuzzyFinderTextMate<CR>
+" map <leader>F :ruby finder.rescan!<CR>
+" let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
+
+" command-t plugin
+silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
+map <leader>F :CommandTFlush<CR>
+" set wildignore+="tmp/**/*"
+
+" ack shortcuts
+map <leader>A :Ack<cword><CR>
+map <leader>a :Ack<Space>
+
+" normal mode shortcuts
+nmap <leader><Enter> _i<Enter><Esc>
+nmap <leader><Space> i<Space><Esc>
+
+" switch between a symbol and a string
+nmap <leader>: ds"i:<Esc>e
+nmap <leader>" bhxcsw"
+
+" ctags shortcuts
+nmap <C-\> <C-]>
+nmap g<C-\> g<C-]>
+
+" easily back to normal mode
+imap ;; <Esc>
+
+" auto complete shortcut
+imap <S-Space> <C-n>
+
+" hash syntax shortcut
+imap <C-l> <Space>=><Space>
+
+
+" ---------------------------------------------------------------------------
+"  rails.vim plugin mappgins
+" ---------------------------------------------------------------------------
+map <leader>r :Rake<CR>
+map <leader>R :.Rake<CR>
+
+nmap <leader>c :Rcontroller 
+nmap <leader>m :Rmodel 
+
+
+
+" ---------------------------------------------------------------------------
 "  Status line customization
 " ---------------------------------------------------------------------------
 set statusline=
@@ -163,24 +167,26 @@ syntax on
 
 
 " ---------------------------------------------------------------------------
+"  Surround plugin - allow # to be used for string interpolation.
+" ---------------------------------------------------------------------------
+autocmd FileType ruby let g:surround_113 = "#{\r}"   " v
+autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
+
+
+" ---------------------------------------------------------------------------
 "  Misc stuff
 " ---------------------------------------------------------------------------
 set clipboard+=unnamed
 set grepprg=ack
 set grepformat=%f:%l:%m
 
-let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
-
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-" Surround plugin - allow # to be used for string interpolation.
-autocmd FileType ruby let g:surround_113 = "#{\r}"   " v
-autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
-
-set completeopt=longest,menu,preview
+set completeopt=longest,menu,preview        " insert mode comletion options
 set complete=.
 set lines=79 columns=272
 
+" Write all named, changed buffers when Vim loses focus
 au FocusLost * :wall
 
 augroup myfiletypes
