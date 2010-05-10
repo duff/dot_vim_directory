@@ -12,7 +12,6 @@ set viminfo='10,\"100,:20,%,n~/.viminfo       " remember certain things when we 
 set autoread                                  " reload files changed outside of Vim
 set autowrite                                 " some commands should cause an automatic write
 
-
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -21,7 +20,7 @@ set number                            " line numbers
 set backspace=start,indent,eol        " allow backspacing over anything in insert mode
 set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
-let NERDTreeWinSize=41                " how wide nerdtree ought to be
+let NERDTreeWinSize=31                " how wide nerdtree ought to be
 
 
 " ----------------------------------------------------------------------------
@@ -92,15 +91,10 @@ map <leader>K [M
 map <leader>v :sp ~/.vimrc<CR><C-W>_
 map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
-" fuzzyfinder stuff
-" map <leader>f :FuzzyFinderTextMate<CR>
-" map <leader>F :ruby finder.rescan!<CR>
-" let g:fuzzy_ignore="tmp/**/*,vendor/gems/compass**/**/*,vendor/gems/haml**/**/*,app/stylesheets/*.sass,vendor/**/*"
-
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 map <leader>F :CommandTFlush<CR>
-" set wildignore+="tmp/**/*"
+set wildignore+=bundler_gems,legacy_gems,coverage,images,plugins,activesupport,actionpack,railties,actionmailer
 
 " ack shortcuts
 map <leader>A :Ack<cword><CR>
