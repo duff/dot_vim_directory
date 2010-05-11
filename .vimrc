@@ -125,13 +125,17 @@ imap <C-l> <Space>=><Space>
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappgins
 " ---------------------------------------------------------------------------
-map <leader>r :Rake<CR>
-map <leader>R :.Rake<CR>
+nmap <leader>r :Rake<CR>
+nmap <leader>R :.Rake<CR>
 
-nmap <leader>c :Rcontroller 
-nmap <leader>m :Rmodel 
-
-
+nmap <leader><leader>c :Rcontroller 
+nmap <leader><leader>m :Rmodel 
+nmap <leader><leader>v :Rview 
+nmap <leader><leader>h :Rhelper 
+nmap <leader><leader>i :Rinitializer 
+nmap <leader><leader>e :Renvironment 
+nmap <leader><leader>l :Rlib 
+nmap <leader><leader>s :Rintegrationtest 
 
 " ---------------------------------------------------------------------------
 "  Status line customization
