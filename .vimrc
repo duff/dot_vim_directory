@@ -277,6 +277,11 @@ vnoremap <silent>ai :<C-u>cal IndTxtObj(0)<CR><Esc>gv
 vnoremap <silent>ii :<C-u>cal IndTxtObj(1)<CR><Esc>gv
 
 function! IndTxtObj(inner)
+  if &filetype == 'haml' || &filetype == 'sass' || &filetype == 'python'
+    let meaningful_indentation = 1
+  else
+    let meaningful_indentation = 0
+  endif
   let curline = line(".")
   let lastline = line("$")
   let i = indent(line(".")) - &shiftwidth * (v:count1 - 1)
@@ -303,8 +308,9 @@ function! IndTxtObj(inner)
     let p = line(".") + 1
     let nextblank = getline(p) =~ "^\\s*$"
   endwhile
-  if (!a:inner)
+  if (!a:inner && !meaningful_indentation)
     +
   endif
   normal! $
 endfunction
+
