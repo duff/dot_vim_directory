@@ -16,7 +16,6 @@ set autowrite                                 " some commands should cause an au
 "  UI
 " ----------------------------------------------------------------------------
 set ruler                             " show the cursor position all the time
-set number                            " line numbers
 set backspace=start,indent,eol        " allow backspacing over anything in insert mode
 set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
