@@ -121,6 +121,9 @@ imap <S-Space> <C-n>
 " hash syntax shortcut
 imap <C-l> <Space>=><Space>
 
+" negate a conditional
+nmap <leader>! F<Space>li!<Esc>$
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappgins
