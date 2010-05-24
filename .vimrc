@@ -139,6 +139,7 @@ nmap <leader><leader>i :Rinitializer
 nmap <leader><leader>e :Renvironment 
 nmap <leader><leader>l :Rlib 
 nmap <leader><leader>s :Rintegrationtest 
+nmap <leader><leader>u :Runittest 
 
 " ---------------------------------------------------------------------------
 "  Status line customization
