@@ -1,4 +1,4 @@
-
+ 
 " ---------------------------------------------------------------------------
 " General
 " ---------------------------------------------------------------------------
@@ -120,8 +120,10 @@ imap <S-Space> <C-n>
 " hash syntax shortcut
 imap <C-l> <Space>=><Space>
 
-" negate a conditional
-nmap <leader>! F<Space>li!<Esc>$
+" paste the last thing really yanked rather than deleted.  Useful for 
+" repeatedly replacing some text with something previously yanked.
+vmap <leader>p "0p
+vmap <leader>P "0P
 
 
 " ---------------------------------------------------------------------------
@@ -146,6 +148,7 @@ nmap <leader><leader>u :Runittest
 set statusline=
 set statusline+=%-3.3n\                      " buffer number
 set statusline+=%f\                          " filename
+set number                                   " show line numbers
 set statusline+=%h%m%r%w                     " status flags
 set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type
 set statusline+=\ %{fugitive#statusline()}   " fugitive
