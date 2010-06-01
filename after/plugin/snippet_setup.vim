@@ -8,4 +8,5 @@ call NERDSnippetsFromDirectory("~/.vim/snippets")
 call NERDSnippetsFromDirectoryForFiletype('~/.vim/snippets/ruby-rails', 'ruby')
 call NERDSnippetsFromDirectoryForFiletype('~/.vim/snippets/eruby-rails', 'eruby')
 call NERDSnippetsFromDirectoryForFiletype('~/.vim/snippets/html', 'eruby')
+call NERDSnippetsFromDirectoryForFiletype('~/.vim/snippets/cucumber', 'ruby')
 
