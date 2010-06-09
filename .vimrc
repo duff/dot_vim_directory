@@ -273,6 +273,9 @@ augroup QFixToggle
 augroup END
 
 
+if $TERM == 'screen'
+  set term=xterm
+endif
 
 " ---------------------------------------------------------------------------
 "  Operate on indent levels.  Awesomeness.
