@@ -88,12 +88,13 @@ map <leader>K [M
 
 " edit vimrc
 map <leader>v :sp ~/.vimrc<CR><C-W>_
-map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>:execute 'NERDTreeToggle ' . getcwd()<CR>:execute 'NERDTreeToggle ' . getcwd()<CR><C-W>l
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 map <leader>F :CommandTFlush<CR>
-set wildignore+=bundler_gems,legacy_gems,coverage,images,activesupport,actionpack,railties,actionmailer
+" set wildignore+=bundler_gems,legacy_gems,coverage,images,activesupport,actionpack,railties,actionmailer
+set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**
 
 " ack shortcuts
 map <leader>A :Ack<cword><CR>
@@ -127,7 +128,7 @@ vmap <leader>P "0P
 
 
 " ---------------------------------------------------------------------------
-"  rails.vim plugin mappgins
+"  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
 nmap <leader>r :Rake<CR>
 nmap <leader>R :.Rake<CR>
@@ -139,8 +140,16 @@ nmap <leader><leader>h :Rhelper
 nmap <leader><leader>i :Rinitializer 
 nmap <leader><leader>e :Renvironment 
 nmap <leader><leader>l :Rlib 
-nmap <leader><leader>s :Rintegrationtest 
+nmap <leader><leader>f :Rfeature 
 nmap <leader><leader>u :Runittest 
+
+
+" ---------------------------------------------------------------------------
+"  rails.vim autocommands
+" ---------------------------------------------------------------------------
+autocmd User Rails silent! Rnavcommand feature features                  -glob=* -suffix=.feature
+autocmd User Rails silent! Rnavcommand steps   features/step_definitions -glob=* -suffix=_steps.rb
+
 
 " ---------------------------------------------------------------------------
 "  Status line customization
