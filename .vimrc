@@ -93,8 +93,7 @@ map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloade
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 map <leader>F :CommandTFlush<CR>
-" set wildignore+=bundler_gems,legacy_gems,coverage,images,activesupport,actionpack,railties,actionmailer
-set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**
+set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
 
 " ack shortcuts
 map <leader>A :Ack<cword><CR>
@@ -142,6 +141,8 @@ nmap <leader><leader>e :Renvironment
 nmap <leader><leader>l :Rlib 
 nmap <leader><leader>f :Rfeature 
 nmap <leader><leader>u :Runittest 
+nmap <leader><leader>j :Rjavascript 
+nmap <leader><leader>t :Rtask 
 
 
 " ---------------------------------------------------------------------------
