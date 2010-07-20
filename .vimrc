@@ -143,6 +143,7 @@ nmap <leader><leader>f :Rfeature
 nmap <leader><leader>u :Runittest 
 nmap <leader><leader>j :Rjavascript 
 nmap <leader><leader>t :Rtask 
+nmap <leader><leader>r :Rspec 
 
 
 " ---------------------------------------------------------------------------
