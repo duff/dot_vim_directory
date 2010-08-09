@@ -20,7 +20,8 @@ set backspace=start,indent,eol        " allow backspacing over anything in inser
 set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
 let NERDTreeWinSize=31                " how wide nerdtree ought to be
-
+set guifont=Monaco:h13
+set antialias
 
 " ----------------------------------------------------------------------------
 "  Visual cues
