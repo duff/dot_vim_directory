@@ -110,7 +110,7 @@ nmap <leader>" bhxcsw"
 
 " ctags shortcuts
 nmap <C-\> <C-]>
-nmap g<C-\> g<C-]>
+nmap g<C-\> g]
 
 " easily back to normal mode
 imap ;; <Esc>
