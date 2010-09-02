@@ -191,9 +191,9 @@ autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
 " ---------------------------------------------------------------------------
 " persistent undo
 " ---------------------------------------------------------------------------
-if v:version >= 703
+if v:version >= 703    " Only available in Vim 7.3 or greater
   set undofile
-  set undodir=~/.vim/undo
+  set undodir=~/.vim/.undo
 endif
 
 
