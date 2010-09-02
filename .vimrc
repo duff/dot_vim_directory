@@ -114,6 +114,7 @@ nmap g<C-\> g]
 
 " easily back to normal mode
 imap ;; <Esc>
+imap ¬ <Esc>
 
 " auto complete shortcut
 imap <S-Space> <C-n>
