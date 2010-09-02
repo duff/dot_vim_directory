@@ -89,7 +89,7 @@ map <leader>K [M
 
 " edit vimrc
 map <leader>v :sp ~/.vimrc<CR><C-W>_
-map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
@@ -187,6 +187,12 @@ syntax on
 " ---------------------------------------------------------------------------
 autocmd FileType ruby let g:surround_113 = "#{\r}"   " v
 autocmd FileType ruby let g:surround_35  = "#{\r}"   " #
+
+" ---------------------------------------------------------------------------
+" persistent undo
+" ---------------------------------------------------------------------------
+set undofile
+set undodir=~/.vim/undo
 
 
 " ---------------------------------------------------------------------------
