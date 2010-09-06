@@ -127,6 +127,10 @@ imap <C-l> <Space>=><Space>
 vmap <leader>p "0p
 vmap <leader>P "0P
 
+" delete the line below/above the current cursor position
+nmap do jdd
+nmap dO kdd
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
