@@ -210,6 +210,17 @@ au FocusLost * :wall
 
 
 " ---------------------------------------------------------------------------
+"  omnicomplete
+" ---------------------------------------------------------------------------
+set ofu=syntaxcomplete#Complete
+autocmd FileType ruby set omnifunc=rubycomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+
+
+" ---------------------------------------------------------------------------
 "  Misc stuff
 " ---------------------------------------------------------------------------
 set clipboard+=unnamed
