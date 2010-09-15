@@ -131,7 +131,6 @@ vmap <leader>P "0P
 nmap do jdd
 nmap dO kdd
 
-
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
@@ -201,6 +200,14 @@ if v:version >= 703    " Only available in Vim 7.3 or greater
   set undodir=~/.vim/.undo
 endif
 
+" ---------------------------------------------------------------------------
+"  Buffers
+" ---------------------------------------------------------------------------
+set hidden                                    " Let me leave buffers even when they're changed.
+
+" Write all named, changed buffers when Vim loses focus
+au FocusLost * :wall
+
 
 " ---------------------------------------------------------------------------
 "  Misc stuff
@@ -215,8 +222,6 @@ set completeopt=longest,menu,preview        " insert mode comletion options
 set complete=.
 set lines=79 columns=272
 
-" Write all named, changed buffers when Vim loses focus
-au FocusLost * :wall
 
 augroup myfiletypes
   "clear old autocmds in group
