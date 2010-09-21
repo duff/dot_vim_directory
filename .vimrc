@@ -132,6 +132,9 @@ vmap <leader>P "0P
 nmap do jdd
 nmap dO kdd
 
+" the shift key is now optional to get into command line mode
+nnoremap ; :
+
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
