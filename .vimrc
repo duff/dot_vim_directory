@@ -3,6 +3,7 @@
 " General
 " ---------------------------------------------------------------------------
 
+call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()    " using pathogen for a bunch of plugins
 set nocompatible
 let mapleader = ","
