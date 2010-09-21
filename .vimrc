@@ -73,9 +73,9 @@ nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <leader>1 :cprevious <CR>
 nnoremap <leader>2 :cnext <CR>
 
-" tab is much easier to press than %
-nnoremap <tab> %
-vnoremap <tab> %
+" space is much easier to press than %
+nnoremap <space> %
+vnoremap <space> %
 
 " clean up cucumber tables
 nnoremap <leader>= :Tabularize /\|<CR>
