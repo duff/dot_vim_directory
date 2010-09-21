@@ -135,6 +135,10 @@ nmap dO kdd
 " the shift key is now optional to get into command line mode
 nnoremap ; :
 
+" tab is much easier to press than %
+nnoremap <tab> %
+vnoremap <tab> %
+
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
