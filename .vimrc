@@ -66,44 +66,48 @@ set directory=~/.vim/tmp               " where to keep swp files
 " ---------------------------------------------------------------------------
 
 " show/hide nerdtree
-noremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-noremap <leader>n :NERDTreeFind<CR>
+nnoremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+nnoremap <leader>n :NERDTreeFind<CR>
 
 " navigating search results
-noremap <leader>1 :cprevious <CR>
-noremap <leader>2 :cnext <CR>
+nnoremap <leader>1 :cprevious <CR>
+nnoremap <leader>2 :cnext <CR>
+
+" tab is much easier to press than %
+nnoremap <tab> %
+vnoremap <tab> %
 
 " clean up cucumber tables
-noremap <leader>= :Tabularize /\|<CR>
+nnoremap <leader>= :Tabularize /\|<CR>
 
 " move between windows
-noremap <C-J> <C-W>j
-noremap <C-K> <C-W>k
-noremap <C-H> <C-W>h
-noremap <C-L> <C-W>l
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
 
 " method navigation
-noremap <leader>j ]m
-noremap <leader>J ]M
-noremap <leader>k [m
-noremap <leader>K [M
+nnoremap <leader>j ]m
+nnoremap <leader>J ]M
+nnoremap <leader>k [m
+nnoremap <leader>K [M
 
 " edit vimrc
-noremap <leader>v :sp ~/.vimrc<CR><C-W>_
-noremap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
+nmap <leader>v :sp ~/.vimrc<CR><C-W>_
+nmap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
-noremap <leader>F :CommandTFlush<CR>
+nnoremap <leader>F :CommandTFlush<CR>
 set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
 
 " ack shortcuts
-noremap <leader>A :Ack<cword><CR>
-noremap <leader>a :Ack<Space>
+nnoremap <leader>A :Ack<cword><CR>
+nnoremap <leader>a :Ack<Space>
 
 " normal mode shortcuts
-noremap <leader><Enter> _i<Enter><Esc>
-noremap <leader><Space> i<Space><Esc>
+nnoremap <leader><Enter> _i<Enter><Esc>
+nnoremap <leader><Space> i<Space><Esc>
 
 " switch between a symbol and a string
 nnoremap <leader>: ds"i:<Esc>e
@@ -134,10 +138,6 @@ nnoremap dO kdd
 
 " the shift key is now optional to get into command line mode
 nnoremap ; :
-
-" tab is much easier to press than %
-nnoremap <tab> %
-vnoremap <tab> %
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
