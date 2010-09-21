@@ -136,6 +136,8 @@ vnoremap <leader>P "0P
 nnoremap do jdd
 nnoremap dO kdd
 
+" Shortcut to make a vertical split
+nnoremap <leader>s :vsp<cr><C-w>l
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
