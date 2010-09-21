@@ -66,71 +66,71 @@ set directory=~/.vim/tmp               " where to keep swp files
 " ---------------------------------------------------------------------------
 
 " show/hide nerdtree
-map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-map <leader>n :NERDTreeFind<CR>
+noremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+noremap <leader>n :NERDTreeFind<CR>
 
 " navigating search results
-map <leader>1 :cprevious <CR>
-map <leader>2 :cnext <CR>
+noremap <leader>1 :cprevious <CR>
+noremap <leader>2 :cnext <CR>
 
 " clean up cucumber tables
-map <leader>= :Tabularize /\|<CR>
+noremap <leader>= :Tabularize /\|<CR>
 
 " move between windows
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-H> <C-W>h
-map <C-L> <C-W>l
+noremap <C-J> <C-W>j
+noremap <C-K> <C-W>k
+noremap <C-H> <C-W>h
+noremap <C-L> <C-W>l
 
 " method navigation
-map <leader>j ]m
-map <leader>J ]M
-map <leader>k [m
-map <leader>K [M
+noremap <leader>j ]m
+noremap <leader>J ]M
+noremap <leader>k [m
+noremap <leader>K [M
 
 " edit vimrc
-map <leader>v :sp ~/.vimrc<CR><C-W>_
-map <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
+noremap <leader>v :sp ~/.vimrc<CR><C-W>_
+noremap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
-map <leader>F :CommandTFlush<CR>
+noremap <leader>F :CommandTFlush<CR>
 set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/rails/**,coverage/**
 
 " ack shortcuts
-map <leader>A :Ack<cword><CR>
-map <leader>a :Ack<Space>
+noremap <leader>A :Ack<cword><CR>
+noremap <leader>a :Ack<Space>
 
 " normal mode shortcuts
-nmap <leader><Enter> _i<Enter><Esc>
-nmap <leader><Space> i<Space><Esc>
+noremap <leader><Enter> _i<Enter><Esc>
+noremap <leader><Space> i<Space><Esc>
 
 " switch between a symbol and a string
-nmap <leader>: ds"i:<Esc>e
-nmap <leader>" bhxcsw"
+nnoremap <leader>: ds"i:<Esc>e
+nnoremap <leader>" bhxcsw"
 
 " ctags shortcuts
-nmap <C-\> <C-]>
-nmap g<C-\> g]
+nnoremap <C-\> <C-]>
+nnoremap g<C-\> g]
 
 " easily back to normal mode
-imap ;; <Esc>
-imap ¬ <Esc>
+inoremap ;; <Esc>
+inoremap ¬ <Esc>
 
 " auto complete shortcut
-imap <S-Space> <C-n>
+inoremap <S-Space> <C-n>
 
 " hash syntax shortcut
-imap <C-l> <Space>=><Space>
+inoremap <C-l> <Space>=><Space>
 
 " paste the last thing really yanked rather than deleted.  Useful for 
 " repeatedly replacing some text with something previously yanked.
-vmap <leader>p "0p
-vmap <leader>P "0P
+vnoremap <leader>p "0p
+vnoremap <leader>P "0P
 
 " delete the line below/above the current cursor position
-nmap do jdd
-nmap dO kdd
+nnoremap do jdd
+nnoremap dO kdd
 
 " the shift key is now optional to get into command line mode
 nnoremap ; :
@@ -142,21 +142,21 @@ vnoremap <tab> %
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
-nmap <leader>r :Rake<CR>
-nmap <leader>R :.Rake<CR>
+nnoremap <leader>r :Rake<CR>
+nnoremap <leader>R :.Rake<CR>
 
-nmap <leader><leader>c :Rcontroller 
-nmap <leader><leader>m :Rmodel 
-nmap <leader><leader>v :Rview 
-nmap <leader><leader>h :Rhelper 
-nmap <leader><leader>i :Rinitializer 
-nmap <leader><leader>e :Renvironment 
-nmap <leader><leader>l :Rlib 
-nmap <leader><leader>f :Rfeature 
-nmap <leader><leader>u :Runittest 
-nmap <leader><leader>j :Rjavascript 
-nmap <leader><leader>t :Rtask 
-nmap <leader><leader>r :Rspec 
+nnoremap <leader><leader>c :Rcontroller 
+nnoremap <leader><leader>m :Rmodel 
+nnoremap <leader><leader>v :Rview 
+nnoremap <leader><leader>h :Rhelper 
+nnoremap <leader><leader>i :Rinitializer 
+nnoremap <leader><leader>e :Renvironment 
+nnoremap <leader><leader>l :Rlib 
+nnoremap <leader><leader>f :Rfeature 
+nnoremap <leader><leader>u :Runittest 
+nnoremap <leader><leader>j :Rjavascript 
+nnoremap <leader><leader>t :Rtask 
+nnoremap <leader><leader>r :Rspec 
 
 
 " ---------------------------------------------------------------------------
