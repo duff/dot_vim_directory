@@ -114,15 +114,15 @@ nnoremap <leader>: ds"i:<Esc>e
 nnoremap <leader>" bhxcsw"
 
 " ctags shortcuts
-nnoremap <C-\> <C-]>
-nnoremap g<C-\> g]
+nmap <C-\> <C-]>
+nmap g<C-\> g]
 
 " easily back to normal mode
 inoremap ;; <Esc>
 inoremap ¬ <Esc>
 
 " auto complete shortcut
-inoremap <S-Space> <C-n>
+imap <S-Space> <C-n>
 
 " hash syntax shortcut
 inoremap <C-l> <Space>=><Space>
@@ -136,8 +136,8 @@ vnoremap <leader>P "0P
 nnoremap do jdd
 nnoremap dO kdd
 
-" Shortcut to make a vertical split
-nnoremap <leader>s :vsp<cr><C-w>l
+" Shortcut to make a horizotal split
+nnoremap <leader>s :sp<cr><C-w>j
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
