@@ -67,3 +67,6 @@
 [submodule "bundle/vim-markdown-preview"]
 	path = bundle/vim-markdown-preview
 	url = http://github.com/robgleeson/vim-markdown-preview.git
+[submodule "bundle/vim-trailing-whitespace"]
+	path = bundle/vim-trailing-whitespace
+	url = http://github.com/bronson/vim-trailing-whitespace.git
