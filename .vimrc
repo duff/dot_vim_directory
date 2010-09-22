@@ -140,7 +140,10 @@ nnoremap dO kdd
 nnoremap <leader>s :sp<cr><C-w>j
 
 " Remove trailing whitespace
-nmap <leader>w :FixWhitespace<cr>
+nnoremap <leader>w :FixWhitespace<cr>
+
+" Easily :q
+nnoremap <Leader>q :q<CR>
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
@@ -317,7 +320,7 @@ function! QFixToggle(forced)
     execute "copen 15"
   endif
 endfunction
-nmap <Leader>q :QFix<CR>
+nmap Q :QFix<CR>
 
 augroup QFixToggle
  autocmd!
