@@ -147,6 +147,7 @@ nnoremap <leader>R :.Rake<CR>
 
 nnoremap <leader><leader>c :Rcontroller 
 nnoremap <leader><leader>m :Rmodel 
+nnoremap <leader><leader>a :Rmailer 
 nnoremap <leader><leader>v :Rview 
 nnoremap <leader><leader>h :Rhelper 
 nnoremap <leader><leader>i :Rinitializer 
