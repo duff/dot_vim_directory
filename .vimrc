@@ -139,6 +139,9 @@ nnoremap dO kdd
 " Shortcut to make a horizotal split
 nnoremap <leader>s :sp<cr><C-w>j
 
+" Remove trailing whitespace
+nmap <leader>w :FixWhitespace<cr>
+
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
