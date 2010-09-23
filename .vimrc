@@ -140,10 +140,11 @@ nnoremap dO kdd
 nnoremap <leader>s :sp<cr><C-w>j
 
 " Remove trailing whitespace
-nnoremap <leader>w :FixWhitespace<cr>
+nnoremap <leader>W :FixWhitespace<cr>
 
-" Easily :q
+" Save a few keystrokes
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>w :w<CR>
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
