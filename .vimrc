@@ -3,7 +3,7 @@
 " General
 " ---------------------------------------------------------------------------
 
-call pathogen#helptags()
+" call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()    " using pathogen for a bunch of plugins
 set nocompatible
 let mapleader = ","
@@ -140,7 +140,7 @@ nnoremap dO kdd
 nnoremap <leader>s :sp<cr><C-w>j
 
 " Remove trailing whitespace
-nnoremap <leader>W :FixWhitespace<cr>
+nnoremap <leader>h :FixWhitespace<cr>
 
 " Save a few keystrokes
 nnoremap <Leader>q :q<CR>
