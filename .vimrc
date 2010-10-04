@@ -86,6 +86,12 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
 
+" resize windows
+nmap <C-Left> <C-W><<C-W><
+nmap <C-Right> <C-W>><C-W>>
+nmap <C-Up> <C-W>+<C-W>+
+nmap <C-Down> <C-W>-<C-W>-
+
 " method navigation
 nnoremap <leader>j ]m
 nnoremap <leader>J ]M
