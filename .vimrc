@@ -1,4 +1,4 @@
- 
+
 " ---------------------------------------------------------------------------
 " General
 " ---------------------------------------------------------------------------
@@ -133,7 +133,7 @@ imap <S-Space> <C-n>
 " hash syntax shortcut
 inoremap <C-l> <Space>=><Space>
 
-" paste the last thing really yanked rather than deleted.  Useful for 
+" paste the last thing really yanked rather than deleted.  Useful for
 " repeatedly replacing some text with something previously yanked.
 vnoremap <leader>p "0p
 vnoremap <leader>P "0P
@@ -151,6 +151,16 @@ nnoremap <leader>h :FixWhitespace<cr>
 " Save a few keystrokes
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
+
+" Visually select the text that was last edited/pasted
+nmap gV `[v`]
+
+" Bubble lines
+nmap ˚ [e
+nmap ∆ ]e
+vmap ˚ [egv
+vmap ∆ ]egv
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
@@ -258,10 +268,10 @@ set lines=79 columns=272
 
 augroup myfiletypes
   "clear old autocmds in group
-  autocmd!    
-  
+  autocmd!
+
   "for ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et     
+  autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et
 augroup END
 
 augroup markdown
