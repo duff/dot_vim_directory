@@ -116,8 +116,8 @@ nnoremap <leader><Enter> _i<Enter><Esc>
 nnoremap <leader><Space> i<Space><Esc>
 
 " switch between a symbol and a string
-nnoremap <leader>: ds"i:<Esc>e
-nnoremap <leader>" bhxcsw"
+nmap <leader>: ds"i:<Esc>e
+nmap <leader>" csW"lx
 
 " ctags shortcuts
 nmap <C-\> <C-]>
