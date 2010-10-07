@@ -73,3 +73,6 @@
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = http://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-indentobject"]
+	path = bundle/vim-indentobject
+	url = http://github.com/austintaylor/vim-indentobject.git
