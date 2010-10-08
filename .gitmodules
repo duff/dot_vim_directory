@@ -76,3 +76,6 @@
 [submodule "bundle/vim-indentobject"]
 	path = bundle/vim-indentobject
 	url = http://github.com/austintaylor/vim-indentobject.git
+[submodule "bundle/vim-commaobject"]
+	path = bundle/vim-commaobject
+	url = git://github.com/duff/vim-commaobject.git
