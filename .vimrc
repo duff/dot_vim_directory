@@ -151,6 +151,7 @@ nnoremap <leader>h :FixWhitespace<cr>
 " Save a few keystrokes
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
+nnoremap <Leader>x :x<CR>
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
