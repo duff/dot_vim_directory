@@ -112,7 +112,7 @@ nnoremap <leader>A :Ack<cword><CR>
 nnoremap <leader>a :Ack<Space>
 
 " normal mode shortcuts
-nnoremap <leader><Enter> _i<Enter><Esc>k0d$j^
+nmap <leader><Enter> [ 
 nnoremap <leader><Space> i<Space><Esc>
 
 " switch between a symbol and a string
