@@ -79,3 +79,6 @@
 [submodule "bundle/vim-commaobject"]
 	path = bundle/vim-commaobject
 	url = git://github.com/duff/vim-commaobject.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
