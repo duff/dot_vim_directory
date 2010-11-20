@@ -214,6 +214,7 @@ let g:CommandTMaxHeight=20
 " ---------------------------------------------------------------------------
 colorscheme vividchalk
 syntax on
+highlight LineNr guifg=darkgray
 
 
 " ---------------------------------------------------------------------------
