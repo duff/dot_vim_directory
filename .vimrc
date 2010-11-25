@@ -162,6 +162,9 @@ nmap ∆ ]e
 vmap ˚ [egv
 vmap ∆ ]egv
 
+" Easily replay the macro recorded in register q
+nnoremap <Leader>m @q
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
