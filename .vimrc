@@ -110,6 +110,7 @@ set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/ra
 " ack shortcuts
 nnoremap <leader>A :Ack<cword><CR>
 nnoremap <leader>a :Ack<Space>
+vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 
 " normal mode shortcuts
 nmap <leader><Enter> [ 
