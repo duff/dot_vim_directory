@@ -67,6 +67,8 @@ set directory=~/.vim/tmp               " where to keep swp files
 
 " show/hide nerdtree
 nnoremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+
+" highlight the current buffer in the nerdtree
 nnoremap <leader>n :NERDTreeFind<CR>
 
 " navigating search results
@@ -93,10 +95,10 @@ nmap <C-Up> <C-W>+<C-W>+
 nmap <C-Down> <C-W>-<C-W>-
 
 " method navigation
-nnoremap <leader>j ]m
-nnoremap <leader>J ]M
-nnoremap <leader>k [m
-nnoremap <leader>K [M
+nmap <leader>j ]m
+nmap <leader>J ]M
+nmap <leader>k [m
+nmap <leader>K [M
 
 " edit vimrc
 nmap <leader>v :sp ~/.vimrc<CR><C-W>_
