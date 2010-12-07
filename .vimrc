@@ -271,7 +271,7 @@ set lines=79 columns=272
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " Yank to the * register (system clipboard) to easily paste into other apps.
-+set clipboard+=unnamed
+set clipboard+=unnamed
 
 
 augroup myfiletypes
