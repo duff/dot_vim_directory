@@ -261,15 +261,17 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 " ---------------------------------------------------------------------------
 "  Misc stuff
 " ---------------------------------------------------------------------------
-set clipboard+=unnamed
 set grepprg=ack
 set grepformat=%f:%l:%m
-
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
 set completeopt=longest,menu,preview        " insert mode comletion options
 set complete=.
 set lines=79 columns=272
+
+" Improve navigation of the popup menu for completion.
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" Yank to the * register (system clipboard) to easily paste into other apps.
++set clipboard+=unnamed
 
 
 augroup myfiletypes
