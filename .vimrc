@@ -168,6 +168,10 @@ vmap ∆ ]egv
 " Easily replay the macro recorded in register q
 nnoremap <Leader>m @q
 
+" Hook up ctrl-i to navigate the jump list. I don't know why ctrl-i
+" doesn't seem to work for me by default.
+nmap <C-i> <C-tab>
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
