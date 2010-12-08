@@ -111,12 +111,12 @@ set wildignore+=vendor/plugins/**,vendor/linked_gems/**,vendor/gems/**,vendor/ra
 
 " ack shortcuts
 nnoremap <leader>A :Ack<cword><CR>
-nnoremap <leader>a :Ack<Space>
+nnoremap <leader>a :Ack<space>
 vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 
 " normal mode shortcuts
-nmap <leader><Enter> [ 
-nnoremap <leader><Space> i<Space><Esc>
+nmap <leader><Enter> [<space>
+nnoremap <leader><space> i<space><Esc>
 
 " switch between a symbol and a string
 nmap <leader>: ds"i:<Esc>e
@@ -131,10 +131,10 @@ inoremap ;; <Esc>
 inoremap ¬ <Esc>
 
 " auto complete shortcut
-imap <S-Space> <C-n>
+imap <S-space> <C-n>
 
 " hash syntax shortcut
-inoremap <C-l> <Space>=><Space>
+inoremap <C-l> <space>=><space>
 
 " paste the last thing really yanked rather than deleted.  Useful for
 " repeatedly replacing some text with something previously yanked.
@@ -175,19 +175,19 @@ nnoremap <Leader>m @q
 nnoremap <leader>r :Rake<CR>
 nnoremap <leader>R :.Rake<CR>
 
-nnoremap <leader><leader>c :Rcontroller 
-nnoremap <leader><leader>m :Rmodel 
-nnoremap <leader><leader>a :Rmailer 
-nnoremap <leader><leader>v :Rview 
-nnoremap <leader><leader>h :Rhelper 
-nnoremap <leader><leader>i :Rinitializer 
-nnoremap <leader><leader>e :Renvironment 
-nnoremap <leader><leader>l :Rlib 
-nnoremap <leader><leader>f :Rfeature 
-nnoremap <leader><leader>u :Runittest 
-nnoremap <leader><leader>j :Rjavascript 
-nnoremap <leader><leader>t :Rtask 
-nnoremap <leader><leader>r :Rspec 
+nnoremap <leader><leader>c :Rcontroller<space>
+nnoremap <leader><leader>m :Rmodel<space>
+nnoremap <leader><leader>a :Rmailer<space>
+nnoremap <leader><leader>v :Rview<space>
+nnoremap <leader><leader>h :Rhelper<space>
+nnoremap <leader><leader>i :Rinitializer<space>
+nnoremap <leader><leader>e :Renvironment<space>
+nnoremap <leader><leader>l :Rlib<space>
+nnoremap <leader><leader>f :Rfeature<space>
+nnoremap <leader><leader>u :Runittest<space>
+nnoremap <leader><leader>j :Rjavascript<space>
+nnoremap <leader><leader>t :Rtask<space>
+nnoremap <leader><leader>r :Rspec<space>
 
 
 " ---------------------------------------------------------------------------
