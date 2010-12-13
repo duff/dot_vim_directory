@@ -142,8 +142,8 @@ vnoremap <leader>p "0p
 vnoremap <leader>P "0P
 
 " delete the line below/above the current cursor position
-nnoremap do jdd
-nnoremap dO kdd
+nnoremap do jddk^
+nnoremap dO kdd^
 
 " Shortcut to make a horizotal split
 nnoremap <leader>s :sp<cr><C-w>j
