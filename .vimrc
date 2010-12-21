@@ -172,6 +172,8 @@ nnoremap <Leader>m @q
 " doesn't seem to work for me by default.
 nmap <C-i> <C-tab>
 
+" show/hide gundo
+nnoremap <leader>g :GundoToggle<CR>
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
@@ -219,6 +221,10 @@ set statusline+=%<%P                         " file position
 let g:CommandTMaxHeight=20
 let g:CommandTMatchWindowAtTop=1
 
+" ---------------------------------------------------------------------------
+"  Gundo customization
+" ---------------------------------------------------------------------------
+let g:gundo_right=1
 
 " ---------------------------------------------------------------------------
 "  Colors/Theme
