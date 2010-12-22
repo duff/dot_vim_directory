@@ -76,8 +76,8 @@ nnoremap <leader>1 :cprevious <CR>
 nnoremap <leader>2 :cnext <CR>
 
 " space is much easier to press than %
-nnoremap <space> %
-vnoremap <space> %
+nmap <space> %
+vmap <space> %
 
 " clean up cucumber tables
 nnoremap <leader>= :Tabularize /\|<CR>
