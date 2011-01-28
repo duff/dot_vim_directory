@@ -194,13 +194,14 @@ nnoremap <leader><leader>u :Runittest<space>
 nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>r :Rspec<space>
+nnoremap <leader><leader>d :Rstepdefinitions<space>
 
 
 " ---------------------------------------------------------------------------
 "  rails.vim autocommands
 " ---------------------------------------------------------------------------
-autocmd User Rails silent! Rnavcommand feature features                  -glob=* -suffix=.feature
-autocmd User Rails silent! Rnavcommand steps   features/step_definitions -glob=* -suffix=_steps.rb
+autocmd User Rails silent! Rnavcommand feature           features                  -glob=**/* -suffix=.feature
+autocmd User Rails silent! Rnavcommand stepdefinitions   features/step_definitions -glob=**/* -suffix=_steps.rb
 
 
 " ---------------------------------------------------------------------------
