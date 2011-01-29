@@ -100,10 +100,6 @@ nmap <leader>J ]M
 nmap <leader>k [m
 nmap <leader>K [M
 
-" edit vimrc
-nmap <leader>v :sp ~/.vimrc<CR><C-W>_
-nmap <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
-
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
@@ -145,8 +141,13 @@ vnoremap <leader>P "0P
 nnoremap do jddk^
 nnoremap dO kdd^
 
-" Shortcut to make a horizotal split
+" Shortcut to make splits
 nnoremap <leader>s :sp<cr><C-w>j
+nnoremap <leader>v :vsp<cr><C-w>l
+
+" edit vimrc
+nmap <leader>c :sp ~/.vimrc<CR><C-W>_
+nmap <leader>C :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
 
 " Remove trailing whitespace
 nnoremap <leader>h :FixWhitespace<cr>
