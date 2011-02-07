@@ -33,6 +33,7 @@ set nohlsearch              " don't highlight searches
 set visualbell              " quiet
 set noerrorbells            " quiet
 set number                  " show line numbers
+set showcmd                 " show size of visual selection
 
 
 " ----------------------------------------------------------------------------
