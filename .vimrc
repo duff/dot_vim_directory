@@ -222,7 +222,6 @@ set statusline+=%<%P                         " file position
 "  Command-t customization
 " ---------------------------------------------------------------------------
 let g:CommandTMaxHeight=20
-let g:CommandTMatchWindowAtTop=1
 
 " ---------------------------------------------------------------------------
 "  Gundo customization
