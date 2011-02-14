@@ -96,8 +96,8 @@ nmap <C-Up> <C-W>+<C-W>+
 nmap <C-Down> <C-W>-<C-W>-
 
 " method navigation
-nmap <leader>j ]m
-nmap <leader>J ]M
+nmap <leader>J ]m
+nmap <leader>j ]M
 nmap <leader>k [m
 nmap <leader>K [M
 
