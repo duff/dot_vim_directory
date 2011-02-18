@@ -178,6 +178,7 @@ nmap <C-i> <C-tab>
 " show/hide gundo
 nnoremap <leader>g :GundoToggle<CR>
 
+
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
@@ -198,6 +199,14 @@ nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>r :Rspec<space>
 nnoremap <leader><leader>d :Rstepdefinitions<space>
+
+
+" ---------------------------------------------------------------------------
+"  custom commands - use these at the : command prompt
+" ---------------------------------------------------------------------------
+
+" Forgot to `sudo vim`.  This saves the file anyway.
+command! SudoWrite w !sudo tee %
 
 
 " ---------------------------------------------------------------------------
