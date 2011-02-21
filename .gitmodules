@@ -1,6 +1,3 @@
-[submodule "bundle/nerdsnippets"]
-	path = bundle/nerdsnippets
-	url = git://github.com/scrooloose/nerdsnippets.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
@@ -103,3 +100,6 @@
 [submodule "bundle/vim-tcomment"]
 	path = bundle/vim-tcomment
 	url = https://github.com/tsaleh/vim-tcomment.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = git@github.com:duff/snipmate.vim.git

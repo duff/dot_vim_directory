@@ -1,6 +1,0 @@
-def destroy
-  @\<c-r>=NS_underscore(NS_prompt("snippet_classname", "Model ClassName", ""))\<cr> = \<c-r>=snippet_classname\<cr>.find(params[:id])
-  @\<c-r>=NS_underscore(snippet_classname)\<cr>.destroy
-
-  redirect_to(\<c-r>=NS_underscore(snippet_classname)\<cr>s_url)
-end

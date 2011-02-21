@@ -208,6 +208,9 @@ nnoremap <leader><leader>d :Rstepdefinitions<space>
 " Forgot to `sudo vim`.  This saves the file anyway.
 command! SudoWrite w !sudo tee %
 
+" Reload snipmate snippets
+command! SnipmateReloadSnippets call ReloadAllSnippets()
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim autocommands
