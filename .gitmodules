@@ -97,3 +97,6 @@
 [submodule "bundle/ctags-vim-johnson"]
 	path = bundle/ctags-vim-johnson
 	url = git@github.com:duff/ctags.vim--Johnson.git
+[submodule "bundle/vim-ruby-refactoring"]
+	path = bundle/vim-ruby-refactoring
+	url = git@github.com:duff/vim-ruby-refactoring.git
