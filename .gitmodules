@@ -100,3 +100,6 @@
 [submodule "bundle/vim-ruby-refactoring"]
 	path = bundle/vim-ruby-refactoring
 	url = git@github.com:duff/vim-ruby-refactoring.git
+[submodule "bundle/vim-tcomment"]
+	path = bundle/vim-tcomment
+	url = https://github.com/tsaleh/vim-tcomment.git
