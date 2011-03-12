@@ -35,9 +35,7 @@ set antialias                         " of course
 " ----------------------------------------------------------------------------
 "  Visual cues
 " ----------------------------------------------------------------------------
-set incsearch               " do incremental searching
 set laststatus=2            " always show the status line
-set nohlsearch              " don't highlight searches
 set visualbell              " quiet
 set noerrorbells            " quiet
 set relativenumber          " show more useful line numbers.
@@ -71,6 +69,15 @@ set backupcopy=yes                     " keep attributes of original file
 set backupskip=/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*
 set directory=~/.vim/tmp               " where to keep swp files
 
+" ----------------------------------------------------------------------------
+"  Searching
+" ----------------------------------------------------------------------------
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase              " make searches case insensitive
+set smartcase               " care about case sensitivity if there's a capital letter
+set incsearch               " do incremental searching
+set hlsearch                " highlight the search
 
 
 " ---------------------------------------------------------------------------
@@ -86,6 +93,9 @@ nnoremap <leader>n :NERDTreeFind<CR>
 " navigating search results
 nnoremap <leader>1 :cprevious <CR>
 nnoremap <leader>2 :cnext <CR>
+
+" turn off search highlighting
+nnoremap <leader>z :noh<cr>
 
 " space is much easier to press than %
 nmap <space> %
