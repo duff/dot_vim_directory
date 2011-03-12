@@ -1,17 +1,23 @@
 
 " ---------------------------------------------------------------------------
+" Pathogen initialization
+" ---------------------------------------------------------------------------
+filetype off
+call pathogen#runtime_append_all_bundles()    " using pathogen for a bunch of plugins
+filetype plugin indent on                     " load filetype plugin
+" call pathogen#helptags()
+
+
+" ---------------------------------------------------------------------------
 " General
 " ---------------------------------------------------------------------------
-
-" call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()    " using pathogen for a bunch of plugins
 set nocompatible
 let mapleader = ","
 set history=1000                              " lots of command line history
-filetype plugin indent on                     " load filetype plugin
 set viminfo='10,\"100,:20,%,n~/.viminfo       " remember certain things when we exit
 set autoread                                  " reload files changed outside of Vim
 set autowrite                                 " some commands should cause an automatic write
+
 
 " ----------------------------------------------------------------------------
 "  UI
@@ -20,10 +26,11 @@ set ruler                             " show the cursor position all the time
 set backspace=start,indent,eol        " allow backspacing over anything in insert mode
 set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
-let NERDTreeWinSize=31                " how wide nerdtree ought to be
 set scrolloff=2                       " keep some context when scrolling
-set guifont=Monaco:h13
-set antialias
+set nowrap                            " do not wrap lines
+set guifont=Monaco:h13                " nice font
+set antialias                         " of course
+
 
 " ----------------------------------------------------------------------------
 "  Visual cues
@@ -33,26 +40,29 @@ set laststatus=2            " always show the status line
 set nohlsearch              " don't highlight searches
 set visualbell              " quiet
 set noerrorbells            " quiet
-set number                  " show line numbers
+set relativenumber          " show more useful line numbers.
 set showcmd                 " show size of visual selection
-
+set wildmenu                " show possible matches for command completions using tab
 
 " ----------------------------------------------------------------------------
-"  Text formatting
+"  NerdTree config
 " ----------------------------------------------------------------------------
-set autoindent             " automatically indent new lines
-set expandtab              " expand tabs to spaces
-set nowrap                 " do not wrap lines
+let NERDTreeWinSize=31                " how wide nerdtree ought to be
+
+" ----------------------------------------------------------------------------
+"  Tabs
+" ----------------------------------------------------------------------------
+set tabstop=4
 set softtabstop=2          " yep, two
 set shiftwidth=2
-set tabstop=4
 set nosmarttab             " no tabs, thanks.
+set autoindent             " automatically indent new lines
+set expandtab              " expand tabs to spaces
 
 
 " ----------------------------------------------------------------------------
 "  Backups
 " ----------------------------------------------------------------------------
-
 set nobackup                           " do not keep backups after close
 set nowritebackup                      " do not keep a backup while working
 set noswapfile                         " don't keep swp files either
