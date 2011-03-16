@@ -77,7 +77,6 @@ vnoremap / /\v
 set ignorecase              " make searches case insensitive
 set smartcase               " care about case sensitivity if there's a capital letter
 set incsearch               " do incremental searching
-set hlsearch                " highlight the search
 
 
 " ---------------------------------------------------------------------------
@@ -147,6 +146,7 @@ nmap g<C-\> g]
 " easily back to normal mode
 inoremap ;; <Esc>
 inoremap ¬ <Esc>
+inoremap jj <Esc>
 
 " auto complete shortcut
 imap <S-space> <C-n>
