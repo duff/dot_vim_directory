@@ -124,7 +124,7 @@ nmap <leader>K [M
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
-set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,coverage/**
+set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,coverage/**,tmp/**
 
 " ack shortcuts
 nnoremap <leader>A :Ack<cword><CR>
