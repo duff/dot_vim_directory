@@ -38,14 +38,16 @@ set antialias                         " of course
 set laststatus=2            " always show the status line
 set visualbell              " quiet
 set noerrorbells            " quiet
-set relativenumber          " show more useful line numbers.
 set showcmd                 " show size of visual selection
 set wildmenu                " show possible matches for command completions using tab
+set number                  " show line numbers
+
 
 " ----------------------------------------------------------------------------
 "  NerdTree config
 " ----------------------------------------------------------------------------
 let NERDTreeWinSize=31                " how wide nerdtree ought to be
+
 
 " ----------------------------------------------------------------------------
 "  Tabs
@@ -77,6 +79,7 @@ vnoremap / /\v
 set ignorecase              " make searches case insensitive
 set smartcase               " care about case sensitivity if there's a capital letter
 set incsearch               " do incremental searching
+set nohlsearch              " don't highlight searches
 
 
 " ---------------------------------------------------------------------------
