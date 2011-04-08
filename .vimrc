@@ -157,10 +157,8 @@ imap <S-space> <C-n>
 " hash syntax shortcut
 inoremap <C-l> <space>=><space>
 
-" paste the last thing really yanked rather than deleted.  Useful for
-" repeatedly replacing some text with something previously yanked.
-vnoremap <leader>p "0p
-vnoremap <leader>P "0P
+" allow multiple pastes of the same content when pasting in visual mode.
+vnoremap p pgvy
 
 " delete the line below/above the current cursor position
 nnoremap do jddk^
