@@ -119,10 +119,10 @@ nmap <C-Up> <C-W>+<C-W>+
 nmap <C-Down> <C-W>-<C-W>-
 
 " method navigation
-nmap <leader>J ]m
-nmap <leader>j ]M
-nmap <leader>k [m
-nmap <leader>K [M
+map <leader>J ]m
+map <leader>j ]M
+map <leader>k [m
+map <leader>K [M
 
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
