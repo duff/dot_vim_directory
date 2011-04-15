@@ -106,3 +106,6 @@
 [submodule "bundle/VimCalc"]
 	path = bundle/VimCalc
 	url = https://github.com/gregsexton/VimCalc.git
+[submodule "bundle/vim-matchit"]
+	path = bundle/vim-matchit
+	url = https://github.com/edsono/vim-matchit.git
