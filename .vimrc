@@ -154,7 +154,7 @@ inoremap jj <Esc>
 imap <S-space> <C-n>
 
 " hash syntax shortcut
-inoremap <C-l> <space>=><space>
+inoremap <C-l> :<space>
 
 " allow multiple pastes of the same content when pasting in visual mode.
 vnoremap p pgvy
