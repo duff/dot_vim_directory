@@ -219,7 +219,7 @@ nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>r :Rspec<space>
 nnoremap <leader><leader>s :Rstepdefinitions<space>
-nnoremap <leader><leader>d :Rmigration
+nnoremap <leader><leader>d :Rmigration<space>
 
 
 " ---------------------------------------------------------------------------
