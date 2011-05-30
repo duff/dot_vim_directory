@@ -198,12 +198,12 @@ nmap <C-i> <C-tab>
 " show/hide gundo
 nnoremap <leader>g :GundoToggle<CR>
 
+nnoremap <leader>r :set filetype=ruby<CR>
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
-nnoremap <leader>r :Rake<CR>
-nnoremap <leader>R :.Rake<CR>
 
 nnoremap <leader><leader>c :Rcontroller<space>
 nnoremap <leader><leader>m :Rmodel<space>
