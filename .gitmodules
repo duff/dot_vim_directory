@@ -112,3 +112,9 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git@github.com:duff/nerdtree.git
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/vim-rake"]
+	path = bundle/vim-rake
+	url = https://github.com/tpope/vim-rake.git
