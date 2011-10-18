@@ -200,6 +200,10 @@ nmap <C-i> <C-tab>
 nnoremap <leader>p :setlocal spell spelllang=en_us<CR>
 nnoremap <leader>P :setlocal nospell<CR>
 
+" Better goto mark default
+nnoremap ' `
+nnoremap ` '
+
 " show/hide gundo
 nnoremap <leader>g :GundoToggle<CR>
 
