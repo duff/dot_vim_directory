@@ -35,12 +35,13 @@ set antialias                         " of course
 " ----------------------------------------------------------------------------
 "  Visual cues
 " ----------------------------------------------------------------------------
-set laststatus=2            " always show the status line
-set visualbell              " quiet
-set noerrorbells            " quiet
-set showcmd                 " show size of visual selection
-set wildmenu                " show possible matches for command completions using tab
-set number                  " show line numbers
+set laststatus=2                " always show the status line
+set visualbell                  " quiet
+set noerrorbells                " quiet
+set showcmd                     " show size of visual selection
+set wildmenu                    " show possible matches for command completions using tab
+set wildmode=list:longest,full  " full list using common string. Then full complete.
+set number                      " show line numbers
 
 
 " ----------------------------------------------------------------------------
