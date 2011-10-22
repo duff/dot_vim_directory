@@ -112,6 +112,10 @@ nnoremap <C-K> <C-W>k
 nnoremap <C-H> <C-W>h
 nnoremap <C-L> <C-W>l
 
+" speed up viewport scrolling
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
 " resize windows
 nmap <C-Left> <C-W><<C-W><
 nmap <C-Right> <C-W>><C-W>>
