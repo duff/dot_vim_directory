@@ -48,6 +48,8 @@ set number                      " show line numbers
 "  NerdTree config
 " ----------------------------------------------------------------------------
 let NERDTreeWinSize=31                " how wide nerdtree ought to be
+let NERDTreeMinimalUI=1               " don't need to the noise
+let NERDTreeDirArrows=1               " prettier arrows
 
 
 " ----------------------------------------------------------------------------
