@@ -106,9 +106,6 @@ nnoremap <leader>n :NERDTreeFind<CR>
 nnoremap <leader>1 :cprevious <CR>
 nnoremap <leader>2 :cnext <CR>
 
-" turn off search highlighting
-nnoremap <leader>z :noh<cr>
-
 " space is much easier to press than %
 map <space> %
 
@@ -224,6 +221,9 @@ nnoremap ` '
 
 " show/hide gundo
 nnoremap <leader>g :GundoToggle<CR>
+
+" switch between the last 2 files
+nnoremap <leader>z <c-^>
 
 " switch to a 1.9 hash
 nnoremap <leader>y F:xea:<esc>llxxx
