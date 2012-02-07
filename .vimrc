@@ -226,15 +226,15 @@ nnoremap <leader>y F:xea:<esc>llxxx
 " ---------------------------------------------------------------------------
 "  rails navigation
 " ---------------------------------------------------------------------------
-nnoremap <leader><leader>m :CommandTFlush<cr>\|:CommandT app/models<cr>
-nnoremap <leader><leader>v :CommandTFlush<cr>\|:CommandT app/views<cr>
-nnoremap <leader><leader>c :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-nnoremap <leader><leader>h :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-nnoremap <leader><leader>l :CommandTFlush<cr>\|:CommandT lib<cr>
-nnoremap <leader><leader>i :CommandTFlush<cr>\|:CommandT config/initializers<cr>
-nnoremap <leader><leader>f :CommandTFlush<cr>\|:CommandT features<cr>
-nnoremap <leader><leader>u :CommandTFlush<cr>\|:CommandT test/unit<cr>
-nnoremap <leader><leader>r :CommandTFlush<cr>\|:CommandT spec/models<cr>
+nnoremap <leader><leader>m :CommandT app/models<cr>
+nnoremap <leader><leader>v :CommandT app/views<cr>
+nnoremap <leader><leader>c :CommandT app/controllers<cr>
+nnoremap <leader><leader>h :CommandT app/helpers<cr>
+nnoremap <leader><leader>l :CommandT lib<cr>
+nnoremap <leader><leader>i :CommandT config/initializers<cr>
+nnoremap <leader><leader>f :CommandT features<cr>
+nnoremap <leader><leader>u :CommandT test/unit<cr>
+nnoremap <leader><leader>r :CommandT spec/models<cr>
 
 nnoremap <leader><leader>e :Renvironment<space>
 nnoremap <leader><leader>j :Rjavascript<space>
