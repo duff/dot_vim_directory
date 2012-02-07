@@ -143,6 +143,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
+
 set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,coverage/**,tmp/**
 
 " ack shortcuts
@@ -224,17 +225,21 @@ nnoremap ` '
 " show/hide gundo
 nnoremap <leader>g :GundoToggle<CR>
 
-nnoremap <leader>r :Rake<CR>
-nnoremap <leader>R :.Rake<CR>
-
 " switch to a 1.9 hash
 nnoremap <leader>y F:xea:<esc>llxxx
 
 " Command-T of the directory of the current file
 map <leader>gf :CommandT %%<cr>
 
+" some rails helpers
+nnoremap <leader>gr :topleft :split config/routes.rb<cr>
+nnoremap <leader>gg :topleft 100 :split Gemfile<cr>
+nnoremap <leader>r :Rake<CR>
+nnoremap <leader>R :.Rake<CR>
+
+
 " ---------------------------------------------------------------------------
-"  rails navigation
+"  primary rails navigation
 " ---------------------------------------------------------------------------
 nnoremap <leader><leader>m :CommandT app/models<cr>
 nnoremap <leader><leader>v :CommandT app/views<cr>
@@ -251,7 +256,6 @@ nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>s :Rstepdefinitions<space>
 nnoremap <leader><leader>d :Rmigration<space>
-
 
 " ---------------------------------------------------------------------------
 "  custom commands - use these at the : command prompt
