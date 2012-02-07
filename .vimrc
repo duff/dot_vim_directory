@@ -88,8 +88,8 @@ set nohlsearch              " don't highlight searches
 "  Window sizes
 " ----------------------------------------------------------------------------
 set winwidth=84
-set winheight=5
-set winminheight=5
+set winheight=8
+set winminheight=8
 set winheight=999
 
 " ---------------------------------------------------------------------------
@@ -141,7 +141,7 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 
-set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,coverage/**,tmp/**
+set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,public/assets/**,vendor/assets/javascripts/**,coverage/**,tmp/**
 
 " ack shortcuts
 nnoremap <leader>A :Ack<cword><CR>
