@@ -217,6 +217,9 @@ nnoremap <leader>g :GundoToggle<CR>
 nnoremap <leader>r :Rake<CR>
 nnoremap <leader>R :.Rake<CR>
 
+" switch to a 1.9 hash
+nnoremap <leader>y F:xea:<esc>llxxx
+
 " ---------------------------------------------------------------------------
 "  rails.vim plugin mappings
 " ---------------------------------------------------------------------------
