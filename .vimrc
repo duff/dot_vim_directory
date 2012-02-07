@@ -223,6 +223,9 @@ nnoremap <leader>R :.Rake<CR>
 " switch to a 1.9 hash
 nnoremap <leader>y F:xea:<esc>llxxx
 
+" Command-T of the directory of the current file
+map <leader>gf :CommandT %%<cr>
+
 " ---------------------------------------------------------------------------
 "  rails navigation
 " ---------------------------------------------------------------------------
