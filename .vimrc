@@ -221,22 +221,21 @@ nnoremap <leader>R :.Rake<CR>
 nnoremap <leader>y F:xea:<esc>llxxx
 
 " ---------------------------------------------------------------------------
-"  rails.vim plugin mappings
+"  rails navigation
 " ---------------------------------------------------------------------------
+nnoremap <leader><leader>m :CommandTFlush<cr>\|:CommandT app/models<cr>
+nnoremap <leader><leader>v :CommandTFlush<cr>\|:CommandT app/views<cr>
+nnoremap <leader><leader>c :CommandTFlush<cr>\|:CommandT app/controllers<cr>
+nnoremap <leader><leader>h :CommandTFlush<cr>\|:CommandT app/helpers<cr>
+nnoremap <leader><leader>l :CommandTFlush<cr>\|:CommandT lib<cr>
+nnoremap <leader><leader>i :CommandTFlush<cr>\|:CommandT config/initializers<cr>
+nnoremap <leader><leader>f :CommandTFlush<cr>\|:CommandT features<cr>
+nnoremap <leader><leader>u :CommandTFlush<cr>\|:CommandT test/unit<cr>
+nnoremap <leader><leader>r :CommandTFlush<cr>\|:CommandT spec/models<cr>
 
-nnoremap <leader><leader>c :Rcontroller<space>
-nnoremap <leader><leader>m :Rmodel<space>
-nnoremap <leader><leader>a :Rmailer<space>
-nnoremap <leader><leader>v :Rview<space>
-nnoremap <leader><leader>h :Rhelper<space>
-nnoremap <leader><leader>i :Rinitializer<space>
 nnoremap <leader><leader>e :Renvironment<space>
-nnoremap <leader><leader>l :Rlib<space>
-nnoremap <leader><leader>f :Rfeature<space>
-nnoremap <leader><leader>u :Runittest<space>
 nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
-nnoremap <leader><leader>r :Rspec<space>
 nnoremap <leader><leader>s :Rstepdefinitions<space>
 nnoremap <leader><leader>d :Rmigration<space>
 
