@@ -130,6 +130,9 @@ map <leader>j ]M
 map <leader>k [m
 map <leader>K [M
 
+" add the dir of the current file to the command
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+
 " command-t plugin
 silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
