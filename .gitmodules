@@ -28,9 +28,6 @@
 [submodule "bundle/vim-speeddating"]
 	path = bundle/vim-speeddating
 	url = git://github.com/tpope/vim-speeddating.git
-[submodule "bundle/vim-git"]
-	path = bundle/vim-git
-	url = git://github.com/tpope/vim-git.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = git://github.com/tpope/vim-repeat.git
@@ -76,9 +73,6 @@
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
-[submodule "bundle/vimerl"]
-	path = bundle/vimerl
-	url = https://github.com/oscarh/vimerl.git
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
@@ -88,15 +82,9 @@
 [submodule "bundle/ctags-vim-johnson"]
 	path = bundle/ctags-vim-johnson
 	url = git@github.com:duff/ctags.vim--Johnson.git
-[submodule "bundle/vim-ruby-refactoring"]
-	path = bundle/vim-ruby-refactoring
-	url = git@github.com:duff/vim-ruby-refactoring.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:duff/snipmate.vim.git
-[submodule "bundle/VimCalc"]
-	path = bundle/VimCalc
-	url = https://github.com/gregsexton/VimCalc.git
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/edsono/vim-matchit.git
