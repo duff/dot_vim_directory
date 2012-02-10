@@ -88,8 +88,8 @@ set nohlsearch              " don't highlight searches
 "  Window sizes
 " ----------------------------------------------------------------------------
 set winwidth=84
-set winheight=8
-set winminheight=8
+set winheight=11
+set winminheight=11
 set winheight=999
 
 " ---------------------------------------------------------------------------
@@ -151,7 +151,7 @@ vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 " normal mode shortcuts
 nmap <leader><Enter> [<space>
 nnoremap <leader><space> i<space><Esc>
-noremap L $
+nnoremap <Enter> $
 
 " switch between a symbol and a string
 nmap <leader>: ds"i:<Esc>e
