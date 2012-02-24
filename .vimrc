@@ -151,7 +151,10 @@ vmap <leader>A "ry:Ack<space>"<C-r>r"<CR>
 " normal mode shortcuts
 nmap <leader><Enter> [<space>
 nnoremap <leader><space> i<space><Esc>
-noremap K $
+
+" Easier to get to the end of the line
+noremap gl g_
+
 
 " switch between a symbol and a string
 nmap <leader>: ds"i:<Esc>e
