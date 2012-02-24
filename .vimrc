@@ -226,7 +226,7 @@ nnoremap ` '
 nnoremap <leader>g :GundoToggle<CR>
 
 " switch between the last 2 files
-nnoremap <leader>z <c-^>
+nnoremap go <c-^>
 
 " switch to a 1.9 hash
 nnoremap <leader>y F:xea:<esc>llxxx
