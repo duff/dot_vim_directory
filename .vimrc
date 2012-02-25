@@ -81,13 +81,6 @@ set smartcase               " care about case sensitivity if there's a capital l
 set incsearch               " do incremental searching
 set nohlsearch              " don't highlight searches
 
-" ----------------------------------------------------------------------------
-"  Window sizes
-" ----------------------------------------------------------------------------
-set winwidth=84
-set winheight=13
-set winminheight=13
-set winheight=999
 
 " ---------------------------------------------------------------------------
 " Mappings
