@@ -24,11 +24,9 @@ set autowrite                                 " some commands should cause an au
 " ----------------------------------------------------------------------------
 set ruler                             " show the cursor position all the time
 set backspace=start,indent,eol        " allow backspacing over anything in insert mode
-set guioptions=eg                     " disable scrollbars, etc
 set wm=2                              " wrap margin on the right
 set scrolloff=2                       " keep some context when scrolling
 set nowrap                            " do not wrap lines
-set guifont=Monaco:h13                " nice font
 set antialias                         " of course
 
 
@@ -41,7 +39,6 @@ set noerrorbells                " quiet
 set showcmd                     " show size of visual selection
 set wildmenu                    " show possible matches for command completions using tab
 set wildmode=list:longest,full  " full list using common string. Then full complete.
-set number                      " show line numbers
 
 
 " ----------------------------------------------------------------------------
@@ -308,9 +305,7 @@ let g:ctags_statusline=1
 " ---------------------------------------------------------------------------
 "  Colors/Theme
 " ---------------------------------------------------------------------------
-colorscheme vividchalk
 syntax on
-highlight LineNr guifg=#383838
 
 
 " ---------------------------------------------------------------------------
@@ -354,7 +349,6 @@ set grepprg=ack
 set grepformat=%f:%l:%m
 set completeopt=longest,menu,preview        " insert mode comletion options
 set complete=.
-set lines=79 columns=272
 
 " Improve navigation of the popup menu for completion.
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
