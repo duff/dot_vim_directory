@@ -234,14 +234,14 @@ nnoremap <leader>R :.Rake<CR>
 " ---------------------------------------------------------------------------
 "  primary rails navigation
 " ---------------------------------------------------------------------------
-nnoremap <leader><leader>m :CommandT app/models<cr>
-nnoremap <leader><leader>v :CommandT app/views<cr>
-nnoremap <leader><leader>c :CommandT app/controllers<cr>
-nnoremap <leader><leader>h :CommandT app/helpers<cr>
-nnoremap <leader><leader>l :CommandT lib<cr>
-nnoremap <leader><leader>f :CommandT features<cr>
-nnoremap <leader><leader>u :CommandT test/unit<cr>
-nnoremap <leader><leader>r :CommandT spec/models<cr>
+nnoremap <leader><leader>m :Rmodel<space>
+nnoremap <leader><leader>v :Rview<space>
+nnoremap <leader><leader>c :Rcontroller<space>
+nnoremap <leader><leader>h :Rhelper<space>
+nnoremap <leader><leader>l :Rlib<space>
+nnoremap <leader><leader>f :Rfeature<space>
+nnoremap <leader><leader>u :Runittest<space>
+nnoremap <leader><leader>r :Rspec<space>
 
 nnoremap <leader><leader>i :Rinitializer<space>
 nnoremap <leader><leader>e :Renvironment<space>
