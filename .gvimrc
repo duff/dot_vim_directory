@@ -10,7 +10,7 @@ highlight LineNr guifg=#383838
 " ----------------------------------------------------------------------------
 "  Window sizes
 " ----------------------------------------------------------------------------
-set winwidth=84
-set winheight=13
-set winminheight=13
-set winheight=999
+" set winwidth=84
+" set winheight=13
+" set winminheight=13
+" set winheight=999
