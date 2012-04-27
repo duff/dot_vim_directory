@@ -93,6 +93,10 @@ nnoremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 " highlight the current buffer in the nerdtree
 nnoremap <leader>n :NERDTreeFind<CR>
 
+" make it easy to move to adjacent files in the dir
+nmap gj :NERDTreeFind<CR><C-j><Enter>
+nmap gk :NERDTreeFind<CR><C-k><Enter>
+
 " navigating search results
 nnoremap <leader>1 :cprevious <CR>
 nnoremap <leader>2 :cnext <CR>
