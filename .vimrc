@@ -145,6 +145,8 @@ nnoremap <leader><space> i<space><Esc>
 " Easier to get to the end of the line
 noremap gl g_
 
+" Easier to get to the first non-blank character of the line
+noremap gh ^
 
 " switch between a symbol and a string
 nmap <leader>: ds"i:<Esc>e
