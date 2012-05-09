@@ -185,7 +185,7 @@ nnoremap <leader>v :vsp<cr><C-w>l
 
 " edit vimrc
 nmap <leader>c :sp ~/.vimrc<CR><C-W>_
-nmap <leader>C :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR><leader>d<leader>d<C-L>
+nmap <leader>C :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR><leader>d<leader>d<C-L>:exe ":echo 'vimrc reloaded'"<CR>
 
 " Remove trailing whitespace
 nnoremap <leader>h :FixWhitespace<cr>
