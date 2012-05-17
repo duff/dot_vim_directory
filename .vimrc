@@ -249,7 +249,6 @@ nnoremap <leader><leader>l :CommandT lib<cr>
 nnoremap <leader><leader>f :CommandT features<cr>
 nnoremap <leader><leader>u :CommandT test/unit<cr>
 nnoremap <leader><leader>r :CommandT spec<cr>
-nnoremap <leader><leader>s :CommandT features/step_definitions<cr>
 nnoremap <leader><leader>a :CommandT api<cr>
 
 nnoremap <leader><leader>i :Rinitializer<space>
@@ -257,6 +256,7 @@ nnoremap <leader><leader>e :Renvironment<space>
 nnoremap <leader><leader>j :Rjavascript<space>
 nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>d :Rmigration<space>
+nnoremap <leader><leader>s :Rschema<space>
 
 " ---------------------------------------------------------------------------
 "  custom commands - use these at the : command prompt
