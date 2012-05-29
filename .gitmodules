@@ -115,3 +115,6 @@
 [submodule "bundle/go-vim"]
 	path = bundle/go-vim
 	url = https://github.com/fsouza/go.vim.git
+[submodule "bundle/textobj-lastpat"]
+	path = bundle/textobj-lastpat
+	url = https://github.com/vim-scripts/textobj-lastpat.git
