@@ -52,9 +52,6 @@
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = http://github.com/pangloss/vim-javascript.git
-[submodule "bundle/vim-markdown-preview"]
-	path = bundle/vim-markdown-preview
-	url = http://github.com/robgleeson/vim-markdown-preview.git
 [submodule "bundle/vim-trailing-whitespace"]
 	path = bundle/vim-trailing-whitespace
 	url = git@github.com:duff/vim-trailing-whitespace.git
