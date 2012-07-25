@@ -1,7 +1,7 @@
 set lines=79 columns=272
 
 set guioptions=eg               " disable scrollbars, etc
-set guifont=Monaco:h13         " nice font
+set guifont=Monaco:h11         " nice font
 " set guifont=Bitstream\ Vera\ Sans\ Mono:h12
 set number                      " show line numbers
 
