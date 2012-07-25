@@ -6,14 +6,17 @@ set guifont=Monaco:h11         " nice font
 set number                      " show line numbers
 
 
-
-colorscheme vividchalk
+" colorscheme vividchalk
 
 " Don't want the line numbers to jump out and grab attention
-highlight LineNr guifg=#383838
+" highlight LineNr guifg=#383838
 
 " Make it a little more prominent than the default so I can actually see it.
-highlight MatchParen guibg=#234B96
+" highlight MatchParen guibg=#234B96
+
+
+colorscheme wombat256mod
+
 
 " ----------------------------------------------------------------------------
 "  Window sizes
