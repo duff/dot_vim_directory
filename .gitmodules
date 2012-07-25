@@ -115,6 +115,3 @@
 [submodule "bundle/textobj-lastpat"]
 	path = bundle/textobj-lastpat
 	url = https://github.com/vim-scripts/textobj-lastpat.git
-[submodule "bundle/vim-wombat256mod"]
-	path = bundle/vim-wombat256mod
-	url = git://github.com/duff/vim-wombat256mod.git
