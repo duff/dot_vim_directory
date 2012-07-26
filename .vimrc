@@ -5,7 +5,7 @@
 filetype off
 call pathogen#runtime_append_all_bundles()    " using pathogen for a bunch of plugins
 filetype plugin indent on                     " load filetype plugin
-" call pathogen#helptags()
+call pathogen#helptags()
 
 
 " ---------------------------------------------------------------------------
