@@ -358,6 +358,8 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>
 " Yank to the * register (system clipboard) to easily paste into other apps.
 set clipboard+=unnamed
 
+" Make mail files behave appropriately
+au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us
 
 augroup myfiletypes
   "clear old autocmds in group
