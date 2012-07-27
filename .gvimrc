@@ -15,7 +15,9 @@ set number                      " show line numbers
 " highlight MatchParen guibg=#234B96
 
 
-colorscheme wombat256mod
+" colorscheme wombat256mod
+set background=dark
+colorscheme solarized
 
 
 " ----------------------------------------------------------------------------
