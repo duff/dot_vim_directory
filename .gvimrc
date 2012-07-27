@@ -19,6 +19,7 @@ set number                      " show line numbers
 set background=dark
 colorscheme solarized
 highlight LineNr guibg=#1c1c1c
+highlight NonText guibg=Black guifg=Black
 
 
 " ----------------------------------------------------------------------------
