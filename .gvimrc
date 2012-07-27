@@ -18,6 +18,7 @@ set number                      " show line numbers
 " colorscheme wombat256mod
 set background=dark
 colorscheme solarized
+highlight LineNr guibg=#1c1c1c
 
 
 " ----------------------------------------------------------------------------
