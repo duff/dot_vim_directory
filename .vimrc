@@ -236,6 +236,16 @@ nnoremap <leader>gg :topleft 100 :split Gemfile<cr>
 nnoremap <leader>r :Rake<CR>
 nnoremap <leader>R :.Rake<CR>
 
+" toggle relative line number
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <leader>u :call NumberToggle()<cr>
+
 
 " ---------------------------------------------------------------------------
 "  primary rails navigation
