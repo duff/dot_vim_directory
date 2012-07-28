@@ -211,9 +211,8 @@ nnoremap <Leader>m @q
 " doesn't seem to work for me by default.
 nmap <C-i> <C-tab>
 
-" spell check
-nnoremap <leader>p :setlocal spell spelllang=en_us<CR>
-nnoremap <leader>P :setlocal nospell<CR>
+" toggle spell check
+nnoremap <leader>p :set spell! spell?<cr>
 
 " Better goto mark default
 nnoremap ' `
