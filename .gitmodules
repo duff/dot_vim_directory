@@ -73,9 +73,6 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
-[submodule "bundle/ctags-vim-johnson"]
-	path = bundle/ctags-vim-johnson
-	url = git@github.com:duff/ctags.vim--Johnson.git
 [submodule "bundle/snipmate"]
 	path = bundle/snipmate
 	url = git@github.com:duff/snipmate.vim.git
