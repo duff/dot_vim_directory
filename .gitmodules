@@ -112,9 +112,3 @@
 [submodule "bundle/textobj-lastpat"]
 	path = bundle/textobj-lastpat
 	url = https://github.com/vim-scripts/textobj-lastpat.git
-[submodule "bundle/vim-wombat256mod-duff"]
-	path = bundle/vim-wombat256mod-duff
-	url = git://github.com/duff/vim-wombat256mod.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = git://github.com/duff/vim-colors-solarized.git
