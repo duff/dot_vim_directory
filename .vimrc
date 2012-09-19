@@ -368,7 +368,7 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>
 set clipboard+=unnamed
 
 " Make mail files behave appropriately
-au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us
+au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us textwidth=72
 
 augroup myfiletypes
   "clear old autocmds in group
