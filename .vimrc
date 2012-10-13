@@ -235,6 +235,7 @@ nnoremap <leader>gr :topleft :split config/routes.rb<cr>
 nnoremap <leader>gg :topleft 100 :split Gemfile<cr>
 nnoremap <leader>r :Rake<CR>
 nnoremap <leader>R :.Rake<CR>
+map <silent> <C-N> :se invhlsearch<CR>
 
 " toggle relative line number
 function! NumberToggle()
