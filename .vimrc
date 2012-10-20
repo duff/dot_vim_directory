@@ -261,6 +261,7 @@ nnoremap <leader><leader>u :CommandT test/unit<cr>
 nnoremap <leader><leader>r :CommandT spec<cr>
 nnoremap <leader><leader>a :CommandT api<cr>
 nnoremap <leader><leader>o :CommandT doc<cr>
+nnoremap <leader><leader>p :CommandT app/presenters<cr>
 
 nnoremap <leader><leader>i :Rinitializer<space>
 nnoremap <leader><leader>e :Renvironment<space>
