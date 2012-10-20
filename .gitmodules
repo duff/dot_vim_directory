@@ -112,3 +112,6 @@
 [submodule "bundle/vim-rails-tpope"]
 	path = bundle/vim-rails-tpope
 	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/textile"]
+	path = bundle/textile
+	url = git://github.com/timcharper/textile.vim.git
