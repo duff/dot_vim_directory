@@ -129,6 +129,13 @@ map <leader>j ]M
 map <leader>k [m
 map <leader>K [M
 
+" Less chording
+nnoremap ; :
+
+" Emacs bindings in command line mode
+cnoremap <c-a> <home>
+cnoremap <c-e> <end>
+
 " add the dir of the current file to the command
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
@@ -194,6 +201,10 @@ nnoremap <leader>h :FixWhitespace<cr>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
+
+" Faster substitute
+nnoremap <leader>S :%s/
+
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
