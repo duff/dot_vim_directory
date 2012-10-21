@@ -271,6 +271,11 @@ nnoremap <leader><leader>d :Rmigration<space>
 nnoremap <leader><leader>s :Rschema<space>
 
 " ---------------------------------------------------------------------------
+"  other navigation
+" ---------------------------------------------------------------------------
+nnoremap <leader><leader>u :CommandT source<cr>
+
+" ---------------------------------------------------------------------------
 "  custom commands - use these at the : command prompt
 " ---------------------------------------------------------------------------
 
