@@ -129,9 +129,6 @@ map <leader>j ]M
 map <leader>k [m
 map <leader>K [M
 
-" Less chording
-nnoremap ; :
-
 " Emacs bindings in command line mode
 cnoremap <c-a> <home>
 cnoremap <c-e> <end>
