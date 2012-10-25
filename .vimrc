@@ -19,6 +19,7 @@ set autoread                                  " reload files changed outside of 
 set autowrite                                 " some commands should cause an automatic write
 set nrformats=                                " improves incrementing when there are leading 0's.
 set cpo+=J                                    " sentences are followed by 2 spaces.
+set linebreak                                 " wrapping preserves words
 
 " ----------------------------------------------------------------------------
 "  UI
