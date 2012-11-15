@@ -124,12 +124,6 @@ nmap <C-Right> <C-W>><C-W>>
 nmap <C-Up> <C-W>+<C-W>+
 nmap <C-Down> <C-W>-<C-W>-
 
-" method navigation
-map <leader>J ]m
-map <leader>j ]M
-map <leader>k [m
-map <leader>K [M
-
 " Emacs bindings in command line mode
 cnoremap <c-a> <home>
 cnoremap <c-e> <end>
@@ -227,6 +221,9 @@ nmap <C-i> <C-tab>
 " toggle spell check
 nnoremap <leader>p :set spell! spell?<cr>
 
+" toggle word wrap
+nnoremap <leader>r :set wrap! wrap?<cr>
+
 " Better goto mark default
 nnoremap ' `
 nnoremap ` '
@@ -246,8 +243,8 @@ map <leader>gf :CommandT %%<cr>
 " some rails helpers
 nnoremap <leader>gr :topleft :split config/routes.rb<cr>
 nnoremap <leader>gg :topleft 100 :split Gemfile<cr>
-nnoremap <leader>r :Rake<CR>
-nnoremap <leader>R :.Rake<CR>
+nnoremap <leader>k :Rake<CR>
+nnoremap <leader>K :.Rake<CR>
 map <silent> <C-N> :se invhlsearch<CR>
 
 " toggle relative line number
