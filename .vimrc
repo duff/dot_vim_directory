@@ -19,7 +19,7 @@ set autoread                                  " reload files changed outside of 
 set autowrite                                 " some commands should cause an automatic write
 set nrformats=                                " improves incrementing when there are leading 0's.
 set cpo+=J                                    " sentences are followed by 2 spaces.
-set linebreak                                 " wrapping preserves words
+set linebreak                                 " wrapping preserves words.
 
 " ----------------------------------------------------------------------------
 "  UI
@@ -184,6 +184,7 @@ vnoremap p pgvy
 nnoremap do jddk^
 nnoremap dO kdd^
 
+
 " Shortcut to make splits
 nnoremap <leader>s :sp<cr><C-w>j
 nnoremap <leader>v :vsp<cr><C-w>l
@@ -191,6 +192,9 @@ nnoremap <leader>v :vsp<cr><C-w>l
 " edit vimrc
 nmap <leader>c :sp ~/.vimrc<CR><C-W>_
 nmap <leader>C :source $MYVIMRC<CR>:source $MYGVIMRC<CR>:filetype detect<CR><leader>d<leader>d<C-L>:exe ":echo 'vimrc reloaded'"<CR>
+
+" Shortcut to easily edit a mail message.
+nnoremap <leader>e :sp /tmp/duff_mail.mail<CR><C-W>_
 
 " Remove trailing whitespace
 nnoremap <leader>h :FixWhitespace<cr>
