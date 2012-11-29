@@ -228,21 +228,13 @@ nnoremap <leader>r :set wrap! wrap?<cr>
 nnoremap ' `
 nnoremap ` '
 
-" show/hide gundo
-nnoremap <leader>g :GundoToggle<CR>
-
 " switch between the last 2 files
 nnoremap go <c-^>
 
 " switch to a 1.9 hash
 nnoremap <leader>y F:xea:<esc>llxxx
 
-" Command-T of the directory of the current file
-map <leader>gf :CommandT %%<cr>
-
 " some rails helpers
-nnoremap <leader>gr :topleft :split config/routes.rb<cr>
-nnoremap <leader>gg :topleft 100 :split Gemfile<cr>
 nnoremap <leader>k :Rake<CR>
 nnoremap <leader>K :.Rake<CR>
 map <silent> <C-N> :se invhlsearch<CR>
@@ -280,10 +272,21 @@ nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>d :Rmigration<space>
 nnoremap <leader><leader>s :Rschema<space>
 
+nnoremap <leader><leader>g :split Gemfile<cr>
+
+
 " ---------------------------------------------------------------------------
 "  other navigation
 " ---------------------------------------------------------------------------
-nnoremap <leader><leader>u :CommandT source<cr>
+
+" Command-T of the directory of the current file
+nmap <leader>gf :CommandT %%<cr>
+
+" For source of octopress project
+nnoremap <leader>gs :CommandT source<cr>
+
+
+
 
 " ---------------------------------------------------------------------------
 "  custom commands - use these at the : command prompt
