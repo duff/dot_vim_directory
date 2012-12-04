@@ -272,7 +272,7 @@ nnoremap <leader><leader>t :Rtask<space>
 nnoremap <leader><leader>d :Rmigration<space>
 nnoremap <leader><leader>s :Rschema<space>
 
-nnoremap <leader><leader>g :split Gemfile<cr>
+nnoremap <leader><leader>g :e Gemfile<cr>
 
 
 " ---------------------------------------------------------------------------
