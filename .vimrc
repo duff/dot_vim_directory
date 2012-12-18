@@ -165,6 +165,9 @@ inoremap ;; <Esc>
 inoremap ¬ <Esc>
 inoremap jj <Esc>
 
+" No need to keep hitting the shift key a million times.
+nnoremap ; :
+
 " auto complete shortcut
 imap <S-space> <C-n>
 
