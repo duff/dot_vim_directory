@@ -76,9 +76,6 @@
 [submodule "bundle/vim-matchit"]
 	path = bundle/vim-matchit
 	url = https://github.com/edsono/vim-matchit.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git@github.com:duff/nerdtree.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git

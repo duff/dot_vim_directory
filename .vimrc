@@ -44,14 +44,6 @@ set wildmode=list:longest,full  " full list using common string. Then full compl
 
 
 " ----------------------------------------------------------------------------
-"  NerdTree config
-" ----------------------------------------------------------------------------
-let NERDTreeWinSize=31                " how wide nerdtree ought to be
-let NERDTreeMinimalUI=1               " don't need to the noise
-let NERDTreeDirArrows=1               " prettier arrows
-
-
-" ----------------------------------------------------------------------------
 "  Tabs
 " ----------------------------------------------------------------------------
 set tabstop=4
@@ -87,16 +79,6 @@ set nohlsearch              " don't highlight searches
 " ---------------------------------------------------------------------------
 " Mappings
 " ---------------------------------------------------------------------------
-
-" show/hide nerdtree
-nnoremap <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
-
-" highlight the current buffer in the nerdtree
-nnoremap <leader>n :NERDTreeFind<CR>
-
-" make it easy to move to adjacent files in the dir
-nmap gj :NERDTreeFind<CR><C-j><Enter>
-nmap gk :NERDTreeFind<CR><C-k><Enter>
 
 " navigating search results
 nnoremap <leader>1 :cprevious <CR>
