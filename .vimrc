@@ -384,10 +384,12 @@ augroup myfiletypes
 
   "for ruby, autoindent with two spaces, always expand tabs
   autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et
+
+  autocmd FileType gitcommit setlocal spell
 augroup END
 
 augroup markdown
-  autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:>
+  autocmd BufRead *.markdown setlocal spell ai formatoptions=tcroqn2 comments=n:>
 augroup END
 
 let g:liquid_highlight_types=["html","erb=eruby","html+erb=eruby.html"]
