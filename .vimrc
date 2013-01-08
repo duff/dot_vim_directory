@@ -87,6 +87,12 @@ nnoremap <leader>2 :cnext <CR>
 " space is much easier to press than %
 map <space> %
 
+" show the netrw of the current directory
+nnoremap <leader>d :e .<CR>
+
+" show the netrw of the directory of the current buffer
+nnoremap <leader>n :Explore<CR>
+
 " clean up cucumber tables
 nnoremap <leader>= :Tabularize /\|<CR>
 
