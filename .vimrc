@@ -259,7 +259,7 @@ nnoremap <leader><leader>c :CommandT app/controllers<cr>
 nnoremap <leader><leader>h :CommandT app/helpers<cr>
 nnoremap <leader><leader>l :CommandT lib<cr>
 nnoremap <leader><leader>f :CommandT features<cr>
-nnoremap <leader><leader>u :CommandT test/unit<cr>
+nnoremap <leader><leader>u :CommandT test<cr>
 nnoremap <leader><leader>r :CommandT spec<cr>
 nnoremap <leader><leader>a :CommandT api<cr>
 nnoremap <leader><leader>o :CommandT doc<cr>
