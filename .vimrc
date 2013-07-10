@@ -198,8 +198,8 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>x :x<CR>
 
-" Faster substitute
-nnoremap <leader>S :%s/
+" I often use a Scratch buffer
+nnoremap <leader>S :Scratch<CR>
 
 
 " Visually select the text that was last edited/pasted
