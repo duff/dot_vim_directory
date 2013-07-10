@@ -265,12 +265,12 @@ nnoremap <leader><leader>a :CommandT api<cr>
 nnoremap <leader><leader>o :CommandT doc<cr>
 nnoremap <leader><leader>p :CommandT app/presenters<cr>
 
-nnoremap <leader><leader>i :Rinitializer<space>
-nnoremap <leader><leader>e :Renvironment<space>
-nnoremap <leader><leader>j :Rjavascript<space>
-nnoremap <leader><leader>t :Rtask<space>
-nnoremap <leader><leader>d :Rmigration<space>
-nnoremap <leader><leader>s :Rschema<space>
+nnoremap <leader><leader>i :Einitializer<space>
+nnoremap <leader><leader>e :Eenvironment<space>
+nnoremap <leader><leader>j :Ejavascript<space>
+nnoremap <leader><leader>t :Etask<space>
+nnoremap <leader><leader>d :Emigration<space>
+nnoremap <leader><leader>s :Eschema<space>
 
 nnoremap <leader><leader>g :e Gemfile<cr>
 
