@@ -152,10 +152,6 @@ noremap gl g_
 " Easier to get to the first non-blank character of the line
 noremap gh ^
 
-" switch between a symbol and a string
-nmap <leader>: ds"i:<Esc>e
-nmap <leader>" csw"hxl
-
 " ctags shortcuts
 nmap <C-\> <C-]>
 nmap g<C-\> g]
