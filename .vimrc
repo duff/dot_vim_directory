@@ -168,6 +168,9 @@ inoremap jj <Esc>
 " auto complete shortcut
 imap <S-space> <C-n>
 
+" switch it up with the switch plugin
+nnoremap <S-space> :Switch<CR>
+
 " hash syntax shortcut
 inoremap <C-l> <space>=><space>
 
@@ -200,7 +203,6 @@ nnoremap <Leader>x :x<CR>
 
 " I often use a Scratch buffer
 nnoremap <leader>S :Scratch<CR>
-
 
 " Visually select the text that was last edited/pasted
 nmap gV `[v`]
