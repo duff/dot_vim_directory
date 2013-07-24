@@ -18,3 +18,4 @@ highlight StatusLine term=bold,reverse cterm=bold,reverse ctermfg=Gray  gui=bold
 " Don't need to see the ~ symbols where there's no text.  It's noise.
 highlight NonText guibg=Black guifg=Black
 
+set guicursor+=a:blinkon0
