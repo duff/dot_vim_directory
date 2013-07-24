@@ -121,3 +121,9 @@
 [submodule "bundle/switch"]
 	path = bundle/switch
 	url = git@github.com:AndrewRadev/switch.vim.git
+[submodule "bundle/funcoo"]
+	path = bundle/funcoo
+	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "bundle/dash"]
+	path = bundle/dash
+	url = https://github.com/rizzatti/dash.vim.git
