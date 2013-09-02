@@ -132,8 +132,8 @@ cnoremap <c-e> <end>
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " command-t plugin
-silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
-nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
+" silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
+" nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 
 set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,public/assets/**,vendor/assets/javascripts/**,coverage/**,tmp/**
 
@@ -251,17 +251,17 @@ nnoremap <leader>u :call NumberToggle()<cr>
 " ---------------------------------------------------------------------------
 "  primary rails navigation
 " ---------------------------------------------------------------------------
-nnoremap <leader><leader>m :CommandT app/models<cr>
-nnoremap <leader><leader>v :CommandT app/views<cr>
-nnoremap <leader><leader>c :CommandT app/controllers<cr>
-nnoremap <leader><leader>h :CommandT app/helpers<cr>
-nnoremap <leader><leader>l :CommandT lib<cr>
-nnoremap <leader><leader>f :CommandT features<cr>
-nnoremap <leader><leader>u :CommandT test<cr>
-nnoremap <leader><leader>r :CommandT spec<cr>
-nnoremap <leader><leader>a :CommandT api<cr>
-nnoremap <leader><leader>o :CommandT doc<cr>
-nnoremap <leader><leader>p :CommandT app/presenters<cr>
+nnoremap <leader><leader>m :CtrlP app/models<cr>
+nnoremap <leader><leader>v :CtrlP app/views<cr>
+nnoremap <leader><leader>c :CtrlP app/controllers<cr>
+nnoremap <leader><leader>h :CtrlP app/helpers<cr>
+nnoremap <leader><leader>l :CtrlP lib<cr>
+nnoremap <leader><leader>f :CtrlP features<cr>
+nnoremap <leader><leader>u :CtrlP test<cr>
+nnoremap <leader><leader>r :CtrlP spec<cr>
+nnoremap <leader><leader>a :CtrlP api<cr>
+nnoremap <leader><leader>o :CtrlP doc<cr>
+nnoremap <leader><leader>p :CtrlP app/presenters<cr>
 
 nnoremap <leader><leader>i :Einitializer<space>
 nnoremap <leader><leader>e :Eenvironment<space>
@@ -278,10 +278,10 @@ nnoremap <leader><leader>g :e Gemfile<cr>
 " ---------------------------------------------------------------------------
 
 " Command-T of the directory of the current file
-nmap <leader>gf :CommandT %%<cr>
+" nmap <leader>gf :CommandT %%<cr>
 
 " For source of octopress project
-nnoremap <leader>gs :CommandT source<cr>
+nnoremap <leader>gs :CtrlP source<cr>
 
 
 
@@ -317,9 +317,14 @@ set statusline+=%<%P                         " file position
 
 
 " ---------------------------------------------------------------------------
+"  CtrlP customization
+" ---------------------------------------------------------------------------
+let g:ctrlp_match_window = 'max:20'
+
+" ---------------------------------------------------------------------------
 "  Command-t customization
 " ---------------------------------------------------------------------------
-let g:CommandTMaxHeight=20
+" let g:CommandTMaxHeight=20
 
 " ---------------------------------------------------------------------------
 "  Gundo customization
