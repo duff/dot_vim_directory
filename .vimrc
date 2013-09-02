@@ -383,12 +383,20 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 
 
 " ---------------------------------------------------------------------------
+"  Use The Silver Searcher for everything
+" ---------------------------------------------------------------------------
+let g:ackprg = 'ag --nogroup --column'
+set grepprg=ag\ --nogroup\ --nocolor
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+
+" ---------------------------------------------------------------------------
 "  Misc stuff
 " ---------------------------------------------------------------------------
-set grepprg=ack
-set grepformat=%f:%l:%m
+" set grepformat=%f:%l:%m
 set completeopt=longest,menu,preview        " insert mode comletion options
 set complete=.
+
 
 " Improve navigation of the popup menu for completion.
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
