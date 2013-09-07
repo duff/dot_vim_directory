@@ -83,7 +83,6 @@ set smartcase               " care about case sensitivity if there's a capital l
 set incsearch               " do incremental searching
 set nohlsearch              " don't highlight searches
 
-
 " ---------------------------------------------------------------------------
 " Mappings
 " ---------------------------------------------------------------------------
@@ -266,10 +265,10 @@ nnoremap <leader><leader>r :CtrlP spec<cr>
 nnoremap <leader><leader>a :CtrlP api<cr>
 nnoremap <leader><leader>o :CtrlP doc<cr>
 nnoremap <leader><leader>p :CtrlP app/presenters<cr>
+nnoremap <leader><leader>j :CtrlP app/assets/javascripts<cr>
 
 nnoremap <leader><leader>i :Einitializer<space>
 nnoremap <leader><leader>e :Eenvironment<space>
-nnoremap <leader><leader>j :Ejavascript<space>
 nnoremap <leader><leader>t :Etask<space>
 nnoremap <leader><leader>d :Emigration<space>
 nnoremap <leader><leader>s :Eschema<space>
@@ -323,7 +322,7 @@ set statusline+=%<%P                         " file position
 " ---------------------------------------------------------------------------
 "  CtrlP customization
 " ---------------------------------------------------------------------------
-let g:ctrlp_match_window = 'max:20'
+let g:ctrlp_match_window = 'order:ttb,max:20'
 
 " ---------------------------------------------------------------------------
 "  Command-t customization
