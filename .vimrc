@@ -237,6 +237,10 @@ nnoremap <leader>k :Rake<CR>
 nnoremap <leader>K :.Rake<CR>
 map <silent> <C-N> :se invhlsearch<CR>
 
+" start a :%s with the visual selection.
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+
+
 " toggle relative line number
 function! NumberToggle()
   if(&relativenumber == 1)
