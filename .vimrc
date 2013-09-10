@@ -134,6 +134,10 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 " silent! nmap <unique> <silent> <Leader>f :CommandT<CR>
 " nnoremap <leader>F :CommandTFlush<CR>:CommandT<CR>
 
+" ctrlp plugin
+nnoremap <leader>f :CtrlP<CR>
+nnoremap <leader>F :CtrlPClearCache<CR>:CtrlP<CR>
+
 set wildignore+=vendor/plugins/**,vendor/ruby/**,vendor/gems/**,vendor/cache/**,vendor/rails/**,public/assets/**,vendor/assets/javascripts/**,coverage/**,tmp/**
 
 " ack shortcuts
