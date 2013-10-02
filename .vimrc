@@ -327,6 +327,7 @@ set statusline+=%<%P                         " file position
 "  CtrlP customization
 " ---------------------------------------------------------------------------
 let g:ctrlp_match_window = 'order:ttb,max:20'
+let g:ctrlp_switch_buffer = 'E'
 let g:ctrlp_prompt_mappings = {
     \ 'PrtClearCache()':      ['<c-c>'],
     \ 'PrtExit()':            ['<esc>', '<c-g>'],
