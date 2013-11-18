@@ -328,6 +328,7 @@ set statusline+=%<%P                         " file position
 " ---------------------------------------------------------------------------
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:ctrlp_switch_buffer = 'E'
+let g:ctrlp_by_filename = 1
 let g:ctrlp_prompt_mappings = {
     \ 'PrtClearCache()':      ['<c-c>'],
     \ 'PrtExit()':            ['<esc>', '<c-g>'],
@@ -418,7 +419,7 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>
 set clipboard+=unnamed
 
 " Make mail files behave appropriately
-au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us textwidth=72
+au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us textwidth=67
 
 augroup myfiletypes
   "clear old autocmds in group
