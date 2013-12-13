@@ -266,7 +266,6 @@ nnoremap <leader><leader>l :CtrlP lib<cr>
 nnoremap <leader><leader>f :CtrlP features<cr>
 nnoremap <leader><leader>u :CtrlP test<cr>
 nnoremap <leader><leader>r :CtrlP spec<cr>
-nnoremap <leader><leader>a :CtrlP api<cr>
 nnoremap <leader><leader>o :CtrlP doc<cr>
 nnoremap <leader><leader>p :CtrlP app/presenters<cr>
 nnoremap <leader><leader>j :CtrlP app/assets/javascripts<cr>
@@ -328,7 +327,7 @@ set statusline+=%<%P                         " file position
 " ---------------------------------------------------------------------------
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:ctrlp_switch_buffer = 'E'
-let g:ctrlp_by_filename = 1
+" let g:ctrlp_by_filename = 1
 let g:ctrlp_prompt_mappings = {
     \ 'PrtClearCache()':      ['<c-c>'],
     \ 'PrtExit()':            ['<esc>', '<c-g>'],
