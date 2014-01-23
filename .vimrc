@@ -269,6 +269,7 @@ nnoremap <leader><leader>r :CtrlP spec<cr>
 nnoremap <leader><leader>o :CtrlP doc<cr>
 nnoremap <leader><leader>p :CtrlP app/presenters<cr>
 nnoremap <leader><leader>j :CtrlP app/assets/javascripts<cr>
+nnoremap <leader><leader>s :CtrlP app/assets/stylesheets<cr>
 
 nnoremap <leader><leader>i :Einitializer<space>
 nnoremap <leader><leader>e :Eenvironment<space>
