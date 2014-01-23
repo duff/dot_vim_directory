@@ -274,7 +274,6 @@ nnoremap <leader><leader>i :Einitializer<space>
 nnoremap <leader><leader>e :Eenvironment<space>
 nnoremap <leader><leader>t :Etask<space>
 nnoremap <leader><leader>d :Emigration<space>
-nnoremap <leader><leader>s :Eschema<space>
 
 nnoremap <leader><leader>g :e Gemfile<cr>
 
