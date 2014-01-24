@@ -352,7 +352,7 @@ let g:ctags_statusline=1
 " ---------------------------------------------------------------------------
 "  Notes plugin customization
 " ---------------------------------------------------------------------------
-let g:notes_directory = '~/Documents/Notes'
+let g:notes_directories = [ '~/Documents/Notes' ]
 let g:notes_suffix = '.txt'
 
 " ---------------------------------------------------------------------------
