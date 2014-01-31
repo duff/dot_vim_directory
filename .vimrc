@@ -244,17 +244,6 @@ map <silent> <C-N> :se invhlsearch<CR>
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 
-" toggle relative line number
-function! NumberToggle()
-  if(&relativenumber == 1)
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-nnoremap <leader>u :call NumberToggle()<cr>
-
-
 " ---------------------------------------------------------------------------
 "  primary rails navigation
 " ---------------------------------------------------------------------------
