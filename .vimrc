@@ -219,12 +219,6 @@ nnoremap <Leader>m @q
 " doesn't seem to work for me by default.
 nmap <C-i> <C-tab>
 
-" toggle spell check
-nnoremap <leader>p :set spell! spell?<cr>
-
-" toggle word wrap
-nnoremap <leader>r :set wrap! wrap?<cr>
-
 " Better goto mark default
 nnoremap ' `
 nnoremap ` '
