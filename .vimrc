@@ -255,7 +255,7 @@ nnoremap <leader><leader>l :CtrlP lib<cr>
 nnoremap <leader><leader>f :CtrlP features<cr>
 nnoremap <leader><leader>u :CtrlP test<cr>
 nnoremap <leader><leader>r :CtrlP spec<cr>
-nnoremap <leader><leader>o :CtrlP doc<cr>
+nnoremap <leader><leader>o :CtrlP source<cr>
 nnoremap <leader><leader>p :CtrlP app/presenters<cr>
 nnoremap <leader><leader>j :CtrlP app/assets/javascripts<cr>
 nnoremap <leader><leader>s :CtrlP app/assets/stylesheets<cr>
@@ -274,10 +274,6 @@ nnoremap <leader><leader>g :e Gemfile<cr>
 
 " Command-T of the directory of the current file
 " nmap <leader>gf :CommandT %%<cr>
-
-" For source of octopress project
-nnoremap <leader>gs :CtrlP source<cr>
-
 
 
 
