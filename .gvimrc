@@ -3,13 +3,18 @@ set lines=79 columns=272
 set guioptions=eg         " disable scrollbars, etc
 set number                " show line numbers
 
-set guifont=Monaco:h11    " nice font
+" set guifont=Monaco:h11    " nice font
+" set guifont=Inconsolata:h13    " nice font
+set guifont=Inconsolata-dz:h11    " nice font
 " set guifont=Bitstream\ Vera\ Sans\ Mono:h12
 
 
 set background=dark
 colorscheme solarized
+
 highlight Normal guibg=Black
+" highlight Normal guibg=#161719
+
 highlight RubyDefine guibg=Black
 highlight LineNr guibg=#1c1c1c
 highlight StatusLine term=bold,reverse cterm=bold,reverse ctermfg=Gray  gui=bold,reverse guifg=Gray
