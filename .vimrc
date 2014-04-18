@@ -399,6 +399,8 @@ set clipboard+=unnamed
 " Make mail files behave appropriately
 au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us textwidth=67
 
+au BufRead,BufNewFile *.txt set spell spelllang=en_us textwidth=0
+
 autocmd BufRead,BufNewFile *.md.erb setlocal filetype=eruby.markdown
 
 " Allow preview of github markdown files
@@ -413,6 +415,7 @@ augroup myfiletypes
   autocmd FileType ruby,haml,eruby,yaml set ai sw=2 sts=2 et
 
   autocmd FileType gitcommit setlocal spell
+
 augroup END
 
 augroup markdown
