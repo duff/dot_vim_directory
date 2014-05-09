@@ -19,6 +19,7 @@ highlight RubyDefine guibg=Black
 highlight LineNr guibg=#1c1c1c
 highlight StatusLine term=bold,reverse cterm=bold,reverse ctermfg=Gray  gui=bold,reverse guifg=Gray
 
+highlight MatchParen guibg=NavyBlue guifg=Black
 
 " Don't need to see the ~ symbols where there's no text.  It's noise.
 highlight NonText guibg=Black guifg=Black
