@@ -474,3 +474,11 @@ if $TERM == 'screen'
 endif
 
 
+
+function! s:DetectElixirShellScript()
+    if getline(1) =~ '^#!.*\<elixir\>'
+        set filetype=elixir
+    endif
+endfunction
+
+autocmd BufNewFile,BufRead * call s:DetectElixirShellScript()
