@@ -17,7 +17,7 @@ set history=1000                              " lots of command line history
 set viminfo='10,\"100,:20,%,n~/.viminfo       " remember certain things when we exit
 set autoread                                  " reload files changed outside of Vim
 set autowrite                                 " some commands should cause an automatic write
-set nrformats=                                " improves incrementing when there are leading 0's.  
+set nrformats=                                " improves incrementing when there are leading 0's.
 set cpo+=J                                    " sentences are followed by 2 spaces.
 set linebreak                                 " wrapping preserves words.
 
@@ -30,6 +30,7 @@ set wm=2                              " wrap margin on the right
 set scrolloff=2                       " keep some context when scrolling
 set nowrap                            " do not wrap lines
 set antialias                         " of course
+set synmaxcol=200                     " limit syntax highlighting for long lines
 
 
 " ----------------------------------------------------------------------------
