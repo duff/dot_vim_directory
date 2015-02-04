@@ -282,6 +282,8 @@ command! SudoWrite w !sudo tee %
 " Reload snipmate snippets
 command! SnipmateReloadSnippets call ReloadAllSnippets()
 
+command! MarkdownPreview call LivedownPreview()
+
 
 " ---------------------------------------------------------------------------
 "  rails.vim autocommands
