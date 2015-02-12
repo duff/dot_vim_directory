@@ -139,3 +139,6 @@
 [submodule "bundle/vim-livedown"]
 	path = bundle/vim-livedown
 	url = git@github.com:shime/vim-livedown.git
+[submodule "bundle/vim-markdown-folding"]
+	path = bundle/vim-markdown-folding
+	url = git@github.com:nelstrom/vim-markdown-folding.git
