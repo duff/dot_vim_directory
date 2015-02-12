@@ -404,7 +404,9 @@ au BufRead,BufNewFile *.mail set filetype=mail spell spelllang=en_us textwidth=6
 
 au BufRead,BufNewFile *.txt set spell spelllang=en_us textwidth=0
 
-autocmd BufRead,BufNewFile *.md.erb setlocal filetype=eruby.markdown
+au BufRead,BufNewFile *.md set textwidth=80
+
+autocmd BufRead,BufNewFile *.md.erb setlocal filetype=eruby.markdown textwidth=80
 
 augroup myfiletypes
   "clear old autocmds in group
