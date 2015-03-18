@@ -336,6 +336,7 @@ let g:ctags_statusline=1
 " ---------------------------------------------------------------------------
 let g:notes_directories = ['~/Documents/Notes']
 let g:notes_suffix = '.txt'
+let g:notes_smart_quotes = 0
 
 " ---------------------------------------------------------------------------
 "  Colors/Theme
