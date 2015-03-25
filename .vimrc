@@ -381,8 +381,8 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 " ---------------------------------------------------------------------------
 "  Use The Silver Searcher for everything
 " ---------------------------------------------------------------------------
-let g:ackprg = 'ag --nogroup --column --hidden'
-set grepprg=ag\ --nogroup\ --nocolor
+" let g:ackprg = 'ag --nogroup --column --hidden'
+" set grepprg=ag\ --nogroup\ --nocolor
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 
