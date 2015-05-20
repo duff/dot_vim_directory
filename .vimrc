@@ -409,6 +409,10 @@ au BufRead,BufNewFile *.md set textwidth=80
 
 autocmd BufRead,BufNewFile *.md.erb setlocal filetype=eruby.markdown textwidth=80
 
+" Elixir hackery
+au BufRead,BufNewFile *.ex set nospell textwidth=0
+
+
 augroup myfiletypes
   "clear old autocmds in group
   autocmd!
