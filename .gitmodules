@@ -142,3 +142,9 @@
 [submodule "bundle/vim-markdown-folding"]
 	path = bundle/vim-markdown-folding
 	url = git@github.com:nelstrom/vim-markdown-folding.git
+[submodule "bundle/vim-github-comment"]
+	path = bundle/vim-github-comment
+	url = https://github.com/mmozuras/vim-github-comment
+[submodule "bundle/webapi-vim"]
+	path = bundle/webapi-vim
+	url = git://github.com/mattn/webapi-vim
