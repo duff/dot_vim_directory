@@ -415,6 +415,8 @@ au BufRead,BufNewFile *.txt set spell spelllang=en_us textwidth=0
 
 au BufRead,BufNewFile *.md set textwidth=80
 
+au BufRead,BufNewFile *.csv set synmaxcol=8000
+
 autocmd BufRead,BufNewFile *.md.erb setlocal filetype=eruby.markdown textwidth=80
 
 " Elixir hackery

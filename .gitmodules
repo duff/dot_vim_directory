@@ -148,3 +148,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim
+[submodule "bundle/csv-vim"]
+	path = bundle/csv-vim
+	url = git@github.com:chrisbra/csv.vim.git
