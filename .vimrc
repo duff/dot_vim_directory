@@ -160,11 +160,6 @@ noremap gh ^
 nmap <C-\> <C-]>
 nmap g<C-\> g]
 
-" easily back to normal mode
-inoremap ;; <Esc>
-inoremap ¬ <Esc>
-inoremap jj <Esc>
-
 " auto complete shortcut
 imap <S-space> <C-n>
 
