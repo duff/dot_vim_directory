@@ -6,8 +6,10 @@ set number                " show line numbers
 " set guifont=Bitstream\ Vera\ Sans\ Mono:h12
 " set guifont=Monaco:h11
 " set guifont=Inconsolata:h12
+" set guifont=Inconsolata-dz:h11
 
-set guifont=Inconsolata-dz:h11
+set guifont=Hack:h11
+
 
 
 set background=dark
